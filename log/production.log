@@ -1,0 +1,12 @@
+MONGODB [WARNING] Please note that logging negatively impacts client-side performance. You should set your logging level no lower than :info in production.
+Compiled application.js  (2ms)  (pid 5882)
+Compiled jquery.js  (1ms)  (pid 5882)
+Compiled jquery_ujs.js  (0ms)  (pid 5882)
+Compiled mobiles.js  (51ms)  (pid 5882)
+Compiled application.css  (306ms)  (pid 5882)
+MONGODB [WARNING] Please note that logging negatively impacts client-side performance. You should set your logging level no lower than :info in production.
+Compiled application.js  (2ms)  (pid 5877)
+Compiled jquery.js  (19ms)  (pid 5877)
+Compiled jquery_ujs.js  (0ms)  (pid 5877)
+Compiled mobiles.js  (79ms)  (pid 5877)
+Compiled application.css  (395ms)  (pid 5877)

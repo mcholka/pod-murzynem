@@ -1,0 +1,10 @@
+{ "_id" : { "$oid" : "4f0f028c5abbcb2a74fb0ae0" }, "id_number" : 1, "nazwa" : "Nokia" }
+{ "_id" : { "$oid" : "4f0f028c5abbcb2a74fb0ae1" }, "id_number" : 2, "nazwa" : "Samsung" }
+{ "_id" : { "$oid" : "4f0f028c5abbcb2a74fb0ae2" }, "id_number" : 3, "nazwa" : "LG" }
+{ "_id" : { "$oid" : "4f0f028c5abbcb2a74fb0ae3" }, "id_number" : 4, "nazwa" : "Alcatel" }
+{ "_id" : { "$oid" : "4f0f028c5abbcb2a74fb0ae4" }, "id_number" : 5, "nazwa" : "Sagem" }
+{ "_id" : { "$oid" : "4f0f028c5abbcb2a74fb0ae5" }, "id_number" : 6, "nazwa" : "Motorola" }
+{ "_id" : { "$oid" : "4f0f028c5abbcb2a74fb0ae6" }, "id_number" : 7, "nazwa" : "Sony Ericsson" }
+{ "_id" : { "$oid" : "4f0f028c5abbcb2a74fb0ae7" }, "id_number" : 8, "nazwa" : "Asus" }
+{ "_id" : { "$oid" : "4f0f028c5abbcb2a74fb0ae8" }, "id_number" : 9, "nazwa" : "BenQ" }
+{ "_id" : { "$oid" : "4f0f028c5abbcb2a74fb0ae9" }, "id_number" : 10, "nazwa" : "HTC" }

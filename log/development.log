@@ -1,0 +1,2100 @@
+
+
+Started GET "/" for 127.0.0.1 at 2012-01-11 23:42:36 +0100
+
+ActionController::RoutingError (No route matches [GET] "/"):
+  
+
+Rendered /home/michal/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (10.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-01-11 23:42:43 +0100
+
+ActionController::RoutingError (No route matches [GET] "/"):
+  
+
+Rendered /home/michal/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-01-11 23:42:47 +0100
+
+ActionController::RoutingError (No route matches [GET] "/"):
+  
+
+Rendered /home/michal/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-01-11 23:42:54 +0100
+
+ActionController::RoutingError (No route matches [GET] "/"):
+  
+
+Rendered /home/michal/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.4ms)
+
+
+Started GET "/mobiles" for 127.0.0.1 at 2012-01-11 23:44:22 +0100
+
+ActionController::RoutingError (No route matches [GET] "/mobiles"):
+  
+
+Rendered /home/michal/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.4ms)
+
+
+Started GET "/mobiles" for 127.0.0.1 at 2012-01-11 23:51:24 +0100
+
+ActionController::RoutingError (No route matches [GET] "/mobiles"):
+  
+
+Rendered /home/michal/.gems/ruby/1.9.1/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (10.8ms)
+
+
+Started GET "/mobiles" for 127.0.0.1 at 2012-01-11 23:51:26 +0100
+
+ActionController::RoutingError (No route matches [GET] "/mobiles"):
+  
+
+Rendered /home/michal/.gems/ruby/1.9.1/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.4ms)
+
+
+Started GET "/mobiles" for 127.0.0.1 at 2012-01-11 23:51:27 +0100
+
+ActionController::RoutingError (No route matches [GET] "/mobiles"):
+  
+
+Rendered /home/michal/.gems/ruby/1.9.1/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-01-11 23:51:30 +0100
+
+ActionController::RoutingError (No route matches [GET] "/"):
+  
+
+Rendered /home/michal/.gems/ruby/1.9.1/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-01-11 23:54:07 +0100
+
+ActionController::RoutingError (No route matches [GET] "/"):
+  
+
+Rendered /home/michal/.gems/ruby/1.9.1/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (10.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-01-11 23:54:08 +0100
+
+ActionController::RoutingError (No route matches [GET] "/"):
+  
+
+Rendered /home/michal/.gems/ruby/1.9.1/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.0ms)
+
+
+Started GET "/mobiles" for 127.0.0.1 at 2012-01-11 23:54:12 +0100
+  Processing by MobilesController#index as HTML
+Completed 500 Internal Server Error in 1ms
+
+ActiveRecord::StatementInvalid (Could not find table 'mobiles'):
+  app/controllers/mobiles_controller.rb:5:in `index'
+
+Rendered /home/michal/.gems/ruby/1.9.1/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.6ms)
+Rendered /home/michal/.gems/ruby/1.9.1/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.6ms)
+Rendered /home/michal/.gems/ruby/1.9.1/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (3.6ms)
+  [1m[36m (0.0ms)[0m  [1mselect sqlite_version(*)[0m
+  [1m[35m (60.0ms)[0m  CREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) 
+  [1m[36m (0.1ms)[0m  [1mPRAGMA index_list("schema_migrations")[0m
+  [1m[35m (7.8ms)[0m  CREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")
+  [1m[36m (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Migrating to CreateMobiles (20120111225222)
+  [1m[35m (0.3ms)[0m  CREATE TABLE "mobiles" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "source" varchar(255), "quotation" text, "created_at" datetime, "updated_at" datetime) 
+  [1m[36m (0.1ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('20120111225222')[0m
+  [1m[35m (0.3ms)[0m  select sqlite_version(*)
+  [1m[36m (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+  [1m[35m (0.2ms)[0m  PRAGMA index_list("mobiles")
+  [1m[36m (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+
+
+Started GET "/mobiles" for 127.0.0.1 at 2012-01-11 23:58:24 +0100
+  Processing by MobilesController#index as HTML
+  [1m[36mMobile Load (0.1ms)[0m  [1mSELECT "mobiles".* FROM "mobiles" [0m
+Rendered mobiles/index.html.erb within layouts/application (9.0ms)
+Completed 500 Internal Server Error in 495ms
+
+ActionView::Template::Error ("grey" is not a color for `darken'
+  (in /home/michal/mobiles/app/assets/stylesheets/application.css.scss)):
+    20: 
+    21:   <!-- Place favicon.ico and apple-touch-icon.png in the root directory: mathiasbynens.be/notes/touch-icons -->
+    22: 
+    23:   <%= stylesheet_link_tag "application" %>
+    24:   
+    25:   <!-- More ideas for your <head> here: h5bp.com/d/head-Tips -->
+    26: 
+  app/assets/stylesheets/layout.css.scss:26
+  app/assets/stylesheets/application.css.scss:7
+  app/views/layouts/application.html.erb:23:in `_app_views_layouts_application_html_erb___1507611626908950197_42998180'
+  app/controllers/mobiles_controller.rb:6:in `index'
+
+Rendered /home/michal/.gems/ruby/1.9.1/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.7ms)
+Rendered /home/michal/.gems/ruby/1.9.1/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.6ms)
+Rendered /home/michal/.gems/ruby/1.9.1/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (2.9ms)
+
+
+Started GET "/mobiles" for 127.0.0.1 at 2012-01-12 00:02:33 +0100
+  Processing by MobilesController#index as HTML
+  [1m[36mMobile Load (0.1ms)[0m  [1mSELECT "mobiles".* FROM "mobiles" [0m
+Rendered mobiles/index.html.erb within layouts/application (10.3ms)
+Compiled application.css  (133ms)  (pid 3071)
+Compiled application.js  (3ms)  (pid 3071)
+Compiled jquery.js  (14ms)  (pid 3071)
+Compiled jquery_ujs.js  (0ms)  (pid 3071)
+Compiled mobiles.js  (82ms)  (pid 3071)
+Completed 200 OK in 344ms (Views: 342.9ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-01-12 00:02:33 +0100
+Served asset /application.css - 200 OK (1ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-01-12 00:02:33 +0100
+Served asset /jquery.js - 200 OK (10ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-01-12 00:02:33 +0100
+Served asset /application.js - 200 OK (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-01-12 00:02:33 +0100
+Served asset /jquery_ujs.js - 200 OK (1ms)
+
+
+Started GET "/assets/mobiles.js?body=1" for 127.0.0.1 at 2012-01-12 00:02:33 +0100
+Served asset /mobiles.js - 200 OK (1ms)
+
+
+Started GET "/mobiles/new" for 127.0.0.1 at 2012-01-12 00:02:39 +0100
+  Processing by MobilesController#new as HTML
+Rendered mobiles/_form.html.erb (240.8ms)
+Rendered mobiles/new.html.erb within layouts/application (288.0ms)
+Completed 200 OK in 295ms (Views: 294.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-01-12 00:02:39 +0100
+Served asset /application.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-01-12 00:02:39 +0100
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-01-12 00:02:39 +0100
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-01-12 00:02:39 +0100
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/mobiles.js?body=1" for 127.0.0.1 at 2012-01-12 00:02:39 +0100
+Served asset /mobiles.js - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-01-12 00:02:45 +0100
+
+ActionController::RoutingError (No route matches [GET] "/"):
+  
+
+Rendered /home/michal/.gems/ruby/1.9.1/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.5ms)
+
+
+Started GET "/mobiles" for 127.0.0.1 at 2012-01-12 00:02:50 +0100
+  Processing by MobilesController#index as HTML
+  [1m[35mMobile Load (0.1ms)[0m  SELECT "mobiles".* FROM "mobiles" 
+Rendered mobiles/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 7ms (Views: 6.1ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-01-12 00:02:50 +0100
+Served asset /application.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/mobiles.js?body=1" for 127.0.0.1 at 2012-01-12 00:02:50 +0100
+Served asset /mobiles.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-01-12 00:02:50 +0100
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-01-12 00:02:50 +0100
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-01-12 00:02:50 +0100
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/mobiles" for 127.0.0.1 at 2012-01-12 00:04:37 +0100
+  Processing by MobilesController#index as HTML
+  [1m[36mMobile Load (0.2ms)[0m  [1mSELECT "mobiles".* FROM "mobiles" [0m
+Rendered mobiles/index.html.erb within layouts/application (9.5ms)
+Compiled application.css  (128ms)  (pid 3140)
+Completed 200 OK in 204ms (Views: 202.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-01-12 00:04:37 +0100
+Served asset /application.css - 200 OK (1ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-01-12 00:04:37 +0100
+Served asset /jquery.js - 304 Not Modified (31ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-01-12 00:04:37 +0100
+Served asset /jquery_ujs.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-01-12 00:04:37 +0100
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/mobiles.js?body=1" for 127.0.0.1 at 2012-01-12 00:04:37 +0100
+Served asset /mobiles.js - 304 Not Modified (1ms)
+
+
+Started GET "/mobiles/new" for 127.0.0.1 at 2012-01-12 00:04:40 +0100
+  Processing by MobilesController#new as HTML
+Rendered mobiles/_form.html.erb (215.2ms)
+Rendered mobiles/new.html.erb within layouts/application (242.7ms)
+Completed 200 OK in 250ms (Views: 248.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-01-12 00:04:40 +0100
+Served asset /application.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-01-12 00:04:40 +0100
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-01-12 00:04:40 +0100
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-01-12 00:04:40 +0100
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/mobiles.js?body=1" for 127.0.0.1 at 2012-01-12 00:04:40 +0100
+Served asset /mobiles.js - 304 Not Modified (0ms)
+
+
+Started POST "/mobiles" for 127.0.0.1 at 2012-01-12 00:04:48 +0100
+  Processing by MobilesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"kFO2zmsACQBTvcFFtDYLGnPcpGY8he6JUTH7u/2ucW4=", "mobile"=>{"source"=>"NOKIA", "quotation"=>""}, "commit"=>"Create Mobile"}
+  [1m[35mSQL (83.0ms)[0m  INSERT INTO "mobiles" ("created_at", "quotation", "source", "updated_at") VALUES (?, ?, ?, ?)  [["created_at", Wed, 11 Jan 2012 23:04:48 UTC +00:00], ["quotation", ""], ["source", "NOKIA"], ["updated_at", Wed, 11 Jan 2012 23:04:48 UTC +00:00]]
+Redirected to http://localhost:3000/mobiles/1
+Completed 302 Found in 363ms
+
+
+Started GET "/mobiles/1" for 127.0.0.1 at 2012-01-12 00:04:48 +0100
+  Processing by MobilesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mMobile Load (0.2ms)[0m  [1mSELECT "mobiles".* FROM "mobiles" WHERE "mobiles"."id" = ? LIMIT 1[0m  [["id", "1"]]
+Rendered mobiles/show.html.erb within layouts/application (7.2ms)
+Completed 200 OK in 22ms (Views: 14.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-01-12 00:04:48 +0100
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-01-12 00:04:48 +0100
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-01-12 00:04:48 +0100
+Served asset /application.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/mobiles.js?body=1" for 127.0.0.1 at 2012-01-12 00:04:48 +0100
+Served asset /mobiles.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-01-12 00:04:48 +0100
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/mobiles" for 127.0.0.1 at 2012-01-12 00:04:53 +0100
+  Processing by MobilesController#index as HTML
+  [1m[35mMobile Load (0.2ms)[0m  SELECT "mobiles".* FROM "mobiles" 
+Rendered mobiles/index.html.erb within layouts/application (4.5ms)
+Completed 200 OK in 13ms (Views: 11.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-01-12 00:04:53 +0100
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-01-12 00:04:53 +0100
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-01-12 00:04:53 +0100
+Served asset /application.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/mobiles.js?body=1" for 127.0.0.1 at 2012-01-12 00:04:53 +0100
+Served asset /mobiles.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-01-12 00:04:53 +0100
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/mobiles/1/edit" for 127.0.0.1 at 2012-01-12 00:05:06 +0100
+  Processing by MobilesController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mMobile Load (0.1ms)[0m  [1mSELECT "mobiles".* FROM "mobiles" WHERE "mobiles"."id" = ? LIMIT 1[0m  [["id", "1"]]
+Rendered mobiles/_form.html.erb (9.0ms)
+Rendered mobiles/edit.html.erb within layouts/application (10.2ms)
+Completed 200 OK in 17ms (Views: 15.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-01-12 00:05:06 +0100
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-01-12 00:05:06 +0100
+Served asset /application.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/mobiles.js?body=1" for 127.0.0.1 at 2012-01-12 00:05:06 +0100
+Served asset /mobiles.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-01-12 00:05:06 +0100
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-01-12 00:05:06 +0100
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/mobiles" for 127.0.0.1 at 2012-01-12 00:05:07 +0100
+  Processing by MobilesController#index as HTML
+  [1m[35mMobile Load (0.1ms)[0m  SELECT "mobiles".* FROM "mobiles" 
+Rendered mobiles/index.html.erb within layouts/application (4.5ms)
+Completed 200 OK in 11ms (Views: 9.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-01-12 00:05:08 +0100
+Served asset /application.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-01-12 00:05:08 +0100
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-01-12 00:05:08 +0100
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/mobiles.js?body=1" for 127.0.0.1 at 2012-01-12 00:05:08 +0100
+Served asset /mobiles.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-01-12 00:05:08 +0100
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/mobiles/1" for 127.0.0.1 at 2012-01-12 00:05:09 +0100
+  Processing by MobilesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mMobile Load (0.1ms)[0m  [1mSELECT "mobiles".* FROM "mobiles" WHERE "mobiles"."id" = ? LIMIT 1[0m  [["id", "1"]]
+Rendered mobiles/show.html.erb within layouts/application (3.8ms)
+Completed 200 OK in 12ms (Views: 10.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-01-12 00:05:09 +0100
+Served asset /application.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/mobiles.js?body=1" for 127.0.0.1 at 2012-01-12 00:05:09 +0100
+Served asset /mobiles.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-01-12 00:05:09 +0100
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-01-12 00:05:09 +0100
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-01-12 00:05:09 +0100
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/mobiles/1" for 127.0.0.1 at 2012-01-12 00:10:05 +0100
+  Processing by MobilesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mMobile Load (0.1ms)[0m  [1mSELECT "mobiles".* FROM "mobiles" WHERE "mobiles"."id" = ? LIMIT 1[0m  [["id", "1"]]
+Rendered mobiles/show.html.erb within layouts/application (12.7ms)
+Completed 200 OK in 73ms (Views: 70.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-01-12 00:10:05 +0100
+Served asset /application.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-01-12 00:10:05 +0100
+Served asset /jquery_ujs.js - 304 Not Modified (16ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-01-12 00:10:05 +0100
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-01-12 00:10:05 +0100
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/mobiles.js?body=1" for 127.0.0.1 at 2012-01-12 00:10:05 +0100
+Served asset /mobiles.js - 304 Not Modified (1ms)
+
+
+Started GET "/mobiles/1" for 127.0.0.1 at 2012-01-12 00:10:06 +0100
+  Processing by MobilesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mMobile Load (0.1ms)[0m  SELECT "mobiles".* FROM "mobiles" WHERE "mobiles"."id" = ? LIMIT 1  [["id", "1"]]
+Rendered mobiles/show.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 16ms (Views: 14.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-01-12 00:10:06 +0100
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/mobiles.js?body=1" for 127.0.0.1 at 2012-01-12 00:10:06 +0100
+Served asset /mobiles.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-01-12 00:10:06 +0100
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-01-12 00:10:06 +0100
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-01-12 00:10:06 +0100
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/mobiles/1" for 127.0.0.1 at 2012-01-12 00:10:07 +0100
+  Processing by MobilesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mMobile Load (0.1ms)[0m  [1mSELECT "mobiles".* FROM "mobiles" WHERE "mobiles"."id" = ? LIMIT 1[0m  [["id", "1"]]
+Rendered mobiles/show.html.erb within layouts/application (3.6ms)
+Completed 200 OK in 13ms (Views: 9.5ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-01-12 00:10:07 +0100
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-01-12 00:10:07 +0100
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/mobiles.js?body=1" for 127.0.0.1 at 2012-01-12 00:10:07 +0100
+Served asset /mobiles.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-01-12 00:10:07 +0100
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-01-12 00:10:07 +0100
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/mobiles/1" for 127.0.0.1 at 2012-01-12 00:10:07 +0100
+  Processing by MobilesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mMobile Load (0.1ms)[0m  SELECT "mobiles".* FROM "mobiles" WHERE "mobiles"."id" = ? LIMIT 1  [["id", "1"]]
+Rendered mobiles/show.html.erb within layouts/application (9.5ms)
+Completed 200 OK in 17ms (Views: 15.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-01-12 00:10:07 +0100
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-01-12 00:10:07 +0100
+Served asset /application.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-01-12 00:10:07 +0100
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/mobiles.js?body=1" for 127.0.0.1 at 2012-01-12 00:10:07 +0100
+Served asset /mobiles.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-01-12 00:10:07 +0100
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/mobiles/1" for 127.0.0.1 at 2012-01-12 00:10:07 +0100
+  Processing by MobilesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mMobile Load (0.1ms)[0m  [1mSELECT "mobiles".* FROM "mobiles" WHERE "mobiles"."id" = ? LIMIT 1[0m  [["id", "1"]]
+Rendered mobiles/show.html.erb within layouts/application (26.3ms)
+Completed 200 OK in 35ms (Views: 33.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-01-12 00:10:07 +0100
+Served asset /application.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/mobiles.js?body=1" for 127.0.0.1 at 2012-01-12 00:10:07 +0100
+Served asset /mobiles.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-01-12 00:10:07 +0100
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-01-12 00:10:07 +0100
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-01-12 00:10:07 +0100
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/mobiles/1" for 127.0.0.1 at 2012-01-12 00:10:07 +0100
+  Processing by MobilesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mMobile Load (0.0ms)[0m  SELECT "mobiles".* FROM "mobiles" WHERE "mobiles"."id" = ? LIMIT 1  [["id", "1"]]
+Rendered mobiles/show.html.erb within layouts/application (3.6ms)
+Completed 200 OK in 11ms (Views: 9.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-01-12 00:10:07 +0100
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-01-12 00:10:07 +0100
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-01-12 00:10:07 +0100
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/mobiles.js?body=1" for 127.0.0.1 at 2012-01-12 00:10:07 +0100
+Served asset /mobiles.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-01-12 00:10:07 +0100
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/mobiles/1" for 127.0.0.1 at 2012-01-12 00:10:07 +0100
+  Processing by MobilesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mMobile Load (0.2ms)[0m  [1mSELECT "mobiles".* FROM "mobiles" WHERE "mobiles"."id" = ? LIMIT 1[0m  [["id", "1"]]
+Rendered mobiles/show.html.erb within layouts/application (3.8ms)
+Completed 200 OK in 18ms (Views: 10.3ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-01-12 00:10:08 +0100
+Served asset /application.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-01-12 00:10:08 +0100
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-01-12 00:10:08 +0100
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-01-12 00:10:08 +0100
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/mobiles.js?body=1" for 127.0.0.1 at 2012-01-12 00:10:08 +0100
+Served asset /mobiles.js - 304 Not Modified (0ms)
+
+
+Started GET "/mobiles/1" for 127.0.0.1 at 2012-01-12 00:10:08 +0100
+  Processing by MobilesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mMobile Load (0.1ms)[0m  SELECT "mobiles".* FROM "mobiles" WHERE "mobiles"."id" = ? LIMIT 1  [["id", "1"]]
+Rendered mobiles/show.html.erb within layouts/application (4.2ms)
+Completed 200 OK in 18ms (Views: 16.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-01-12 00:10:08 +0100
+Served asset /application.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-01-12 00:10:08 +0100
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-01-12 00:10:08 +0100
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/mobiles.js?body=1" for 127.0.0.1 at 2012-01-12 00:10:08 +0100
+Served asset /mobiles.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-01-12 00:10:08 +0100
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/mobiles/1" for 127.0.0.1 at 2012-01-12 00:10:08 +0100
+  Processing by MobilesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mMobile Load (0.1ms)[0m  [1mSELECT "mobiles".* FROM "mobiles" WHERE "mobiles"."id" = ? LIMIT 1[0m  [["id", "1"]]
+Rendered mobiles/show.html.erb within layouts/application (4.5ms)
+Completed 200 OK in 13ms (Views: 10.8ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-01-12 00:10:08 +0100
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-01-12 00:10:08 +0100
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/mobiles.js?body=1" for 127.0.0.1 at 2012-01-12 00:10:08 +0100
+Served asset /mobiles.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-01-12 00:10:08 +0100
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-01-12 00:10:08 +0100
+Served asset /application.css - 304 Not Modified (1ms)
+
+
+Started GET "/mobiles/" for 127.0.0.1 at 2012-01-12 00:10:10 +0100
+  Processing by MobilesController#index as HTML
+  [1m[35mMobile Load (0.1ms)[0m  SELECT "mobiles".* FROM "mobiles" ORDER BY source LIMIT 8 OFFSET 0
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "mobiles" [0m
+Rendered mobiles/index.html.erb within layouts/application (46.1ms)
+Completed 200 OK in 53ms (Views: 51.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-01-12 00:10:10 +0100
+Served asset /application.css - 304 Not Modified (6ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-01-12 00:10:10 +0100
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/mobiles.js?body=1" for 127.0.0.1 at 2012-01-12 00:10:10 +0100
+Served asset /mobiles.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-01-12 00:10:10 +0100
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-01-12 00:10:10 +0100
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+MONGODB [WARNING] Please note that logging negatively impacts client-side performance. You should set your logging level no lower than :info in production.
+MONGODB admin['$cmd'].find({:ismaster=>1}).limit(-1)
+MONGODB [WARNING] Please note that logging negatively impacts client-side performance. You should set your logging level no lower than :info in production.
+MONGODB admin['$cmd'].find({:ismaster=>1}).limit(-1)
+MONGODB [WARNING] Please note that logging negatively impacts client-side performance. You should set your logging level no lower than :info in production.
+MONGODB admin['$cmd'].find({:ismaster=>1}).limit(-1)
+MONGODB [WARNING] Please note that logging negatively impacts client-side performance. You should set your logging level no lower than :info in production.
+MONGODB admin['$cmd'].find({:ismaster=>1}).limit(-1)
+
+
+Started GET "/mobiles/" for 127.0.0.1 at 2012-01-12 16:10:49 +0100
+  Processing by MobilesController#index as HTML
+  [1m[36mMobile Load (0.2ms)[0m  [1mSELECT "mobiles".* FROM "mobiles" ORDER BY source LIMIT 5 OFFSET 0[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "mobiles" 
+Rendered mobiles/index.html.erb within layouts/application (70.7ms)
+Completed 200 OK in 296ms (Views: 294.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-01-12 16:10:50 +0100
+Served asset /application.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-01-12 16:10:50 +0100
+Served asset /jquery_ujs.js - 304 Not Modified (47ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-01-12 16:10:50 +0100
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/mobiles.js?body=1" for 127.0.0.1 at 2012-01-12 16:10:50 +0100
+Served asset /mobiles.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-01-12 16:10:50 +0100
+Served asset /application.js - 304 Not Modified (0ms)
+MONGODB [WARNING] Please note that logging negatively impacts client-side performance. You should set your logging level no lower than :info in production.
+MONGODB admin['$cmd'].find({:ismaster=>1}).limit(-1)
+
+
+Started GET "/mobiles/" for 127.0.0.1 at 2012-01-12 16:21:14 +0100
+  Processing by MobilesController#index as HTML
+  [1m[36mMobile Load (0.2ms)[0m  [1mSELECT "mobiles".* FROM "mobiles" ORDER BY source LIMIT 5 OFFSET 0[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "mobiles" 
+Rendered mobiles/index.html.erb within layouts/application (53.9ms)
+Completed 200 OK in 125ms (Views: 123.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-01-12 16:21:14 +0100
+Served asset /application.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/mobiles.js?body=1" for 127.0.0.1 at 2012-01-12 16:21:14 +0100
+Served asset /mobiles.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-01-12 16:21:14 +0100
+Served asset /jquery_ujs.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-01-12 16:21:14 +0100
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-01-12 16:21:14 +0100
+Served asset /application.js - 304 Not Modified (0ms)
+MONGODB [WARNING] Please note that logging negatively impacts client-side performance. You should set your logging level no lower than :info in production.
+MONGODB admin['$cmd'].find({:ismaster=>1}).limit(-1)
+
+
+Started GET "/mobiles/" for 127.0.0.1 at 2012-01-12 16:33:38 +0100
+  Processing by MobilesController#index as HTML
+  [1m[36mMobile Load (0.3ms)[0m  [1mSELECT "mobiles".* FROM "mobiles" ORDER BY source LIMIT 5 OFFSET 0[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "mobiles" 
+Rendered mobiles/index.html.erb within layouts/application (58.4ms)
+Compiled application.css  (147ms)  (pid 6050)
+Compiled application.js  (2ms)  (pid 6050)
+Compiled jquery.js  (1ms)  (pid 6050)
+Compiled jquery_ujs.js  (0ms)  (pid 6050)
+Compiled mobiles.js  (57ms)  (pid 6050)
+Completed 200 OK in 394ms (Views: 392.7ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-01-12 16:33:38 +0100
+Served asset /jquery.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/mobiles.js?body=1" for 127.0.0.1 at 2012-01-12 16:33:38 +0100
+Served asset /mobiles.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-01-12 16:33:38 +0100
+Served asset /jquery_ujs.js - 304 Not Modified (2ms)
+
+
+Started GET "/mobiles/1" for 127.0.0.1 at 2012-01-12 16:33:40 +0100
+  Processing by MobilesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mMobile Load (0.1ms)[0m  [1mSELECT "mobiles".* FROM "mobiles" WHERE "mobiles"."id" = ? LIMIT 1[0m  [["id", "1"]]
+Rendered mobiles/show.html.erb within layouts/application (3.7ms)
+Completed 200 OK in 11ms (Views: 9.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/mobiles.js?body=1" for 127.0.0.1 at 2012-01-12 16:33:40 +0100
+Served asset /mobiles.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-01-12 16:33:40 +0100
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-01-12 16:33:40 +0100
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/mobiles" for 127.0.0.1 at 2012-01-12 16:33:42 +0100
+  Processing by MobilesController#index as HTML
+  [1m[35mMobile Load (0.1ms)[0m  SELECT "mobiles".* FROM "mobiles" ORDER BY source LIMIT 5 OFFSET 0
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "mobiles" [0m
+Rendered mobiles/index.html.erb within layouts/application (7.3ms)
+Completed 200 OK in 14ms (Views: 13.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-01-12 16:33:42 +0100
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-01-12 16:33:42 +0100
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/mobiles.js?body=1" for 127.0.0.1 at 2012-01-12 16:33:42 +0100
+Served asset /mobiles.js - 304 Not Modified (0ms)
+
+
+Started GET "/mobiles/1/edit" for 127.0.0.1 at 2012-01-12 16:33:43 +0100
+  Processing by MobilesController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mMobile Load (0.1ms)[0m  SELECT "mobiles".* FROM "mobiles" WHERE "mobiles"."id" = ? LIMIT 1  [["id", "1"]]
+Rendered mobiles/_form.html.erb (357.9ms)
+Rendered mobiles/edit.html.erb within layouts/application (359.4ms)
+Completed 200 OK in 367ms (Views: 365.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-01-12 16:33:43 +0100
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-01-12 16:33:43 +0100
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/mobiles.js?body=1" for 127.0.0.1 at 2012-01-12 16:33:43 +0100
+Served asset /mobiles.js - 304 Not Modified (0ms)
+
+
+Started PUT "/mobiles/1" for 127.0.0.1 at 2012-01-12 16:33:45 +0100
+  Processing by MobilesController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"kFO2zmsACQBTvcFFtDYLGnPcpGY8he6JUTH7u/2ucW4=", "mobile"=>{"source"=>"NOKIA", "quotation"=>""}, "commit"=>"Update Mobile", "id"=>"1"}
+  [1m[36mMobile Load (0.1ms)[0m  [1mSELECT "mobiles".* FROM "mobiles" WHERE "mobiles"."id" = ? LIMIT 1[0m  [["id", "1"]]
+Redirected to http://localhost:3000/mobiles/1
+Completed 302 Found in 57ms
+
+
+Started GET "/mobiles/1" for 127.0.0.1 at 2012-01-12 16:33:45 +0100
+  Processing by MobilesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mMobile Load (0.1ms)[0m  SELECT "mobiles".* FROM "mobiles" WHERE "mobiles"."id" = ? LIMIT 1  [["id", "1"]]
+Rendered mobiles/show.html.erb within layouts/application (3.6ms)
+Completed 200 OK in 12ms (Views: 10.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-01-12 16:33:45 +0100
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-01-12 16:33:45 +0100
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/mobiles.js?body=1" for 127.0.0.1 at 2012-01-12 16:33:45 +0100
+Served asset /mobiles.js - 304 Not Modified (0ms)
+
+
+Started GET "/mobiles" for 127.0.0.1 at 2012-01-12 16:33:47 +0100
+  Processing by MobilesController#index as HTML
+  [1m[36mMobile Load (0.1ms)[0m  [1mSELECT "mobiles".* FROM "mobiles" ORDER BY source LIMIT 5 OFFSET 0[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "mobiles" 
+Rendered mobiles/index.html.erb within layouts/application (8.1ms)
+Completed 200 OK in 15ms (Views: 14.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-01-12 16:33:47 +0100
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-01-12 16:33:47 +0100
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/mobiles.js?body=1" for 127.0.0.1 at 2012-01-12 16:33:47 +0100
+Served asset /mobiles.js - 304 Not Modified (0ms)
+MONGODB [WARNING] Please note that logging negatively impacts client-side performance. You should set your logging level no lower than :info in production.
+MONGODB admin['$cmd'].find({:ismaster=>1}).limit(-1)
+MONGODB [WARNING] Please note that logging negatively impacts client-side performance. You should set your logging level no lower than :info in production.
+MONGODB admin['$cmd'].find({:ismaster=>1}).limit(-1)
+
+
+Started GET "/mobiles/1" for 127.0.0.1 at 2012-01-12 16:44:57 +0100
+
+ActionController::RoutingError (No route matches [GET] "/mobiles/1"):
+  
+
+Rendered /home/michal/.gems/ruby/1.9.1/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (14.3ms)
+
+
+Started GET "/mobiles/1" for 127.0.0.1 at 2012-01-12 16:44:58 +0100
+
+ActionController::RoutingError (No route matches [GET] "/mobiles/1"):
+  
+
+Rendered /home/michal/.gems/ruby/1.9.1/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.7ms)
+
+
+Started GET "/mobiles/" for 127.0.0.1 at 2012-01-12 16:45:00 +0100
+
+ActionController::RoutingError (No route matches [GET] "/mobiles"):
+  
+
+Rendered /home/michal/.gems/ruby/1.9.1/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.5ms)
+
+
+Started GET "/mobiles" for 127.0.0.1 at 2012-01-12 16:45:02 +0100
+
+ActionController::RoutingError (No route matches [GET] "/mobiles"):
+  
+
+Rendered /home/michal/.gems/ruby/1.9.1/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.4ms)
+
+
+Started GET "/mobiles" for 127.0.0.1 at 2012-01-12 16:45:04 +0100
+
+ActionController::RoutingError (No route matches [GET] "/mobiles"):
+  
+
+Rendered /home/michal/.gems/ruby/1.9.1/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.3ms)
+
+
+Started GET "/mobiles" for 127.0.0.1 at 2012-01-12 16:45:05 +0100
+
+ActionController::RoutingError (No route matches [GET] "/mobiles"):
+  
+
+Rendered /home/michal/.gems/ruby/1.9.1/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.4ms)
+
+
+Started GET "/mobiles" for 127.0.0.1 at 2012-01-12 16:45:05 +0100
+
+ActionController::RoutingError (No route matches [GET] "/mobiles"):
+  
+
+Rendered /home/michal/.gems/ruby/1.9.1/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-01-12 16:45:07 +0100
+
+ActionController::RoutingError (No route matches [GET] "/"):
+  
+
+Rendered /home/michal/.gems/ruby/1.9.1/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.4ms)
+MONGODB [WARNING] Please note that logging negatively impacts client-side performance. You should set your logging level no lower than :info in production.
+MONGODB admin['$cmd'].find({:ismaster=>1}).limit(-1)
+MONGODB [WARNING] Please note that logging negatively impacts client-side performance. You should set your logging level no lower than :info in production.
+MONGODB admin['$cmd'].find({:ismaster=>1}).limit(-1)
+
+
+Started GET "/" for 127.0.0.1 at 2012-01-12 16:57:58 +0100
+
+ActionController::RoutingError (No route matches [GET] "/"):
+  
+
+Rendered /home/michal/.gems/ruby/1.9.1/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (13.1ms)
+
+
+Started GET "/mobiles" for 127.0.0.1 at 2012-01-12 16:58:03 +0100
+
+ActionController::RoutingError (No route matches [GET] "/mobiles"):
+  
+
+Rendered /home/michal/.gems/ruby/1.9.1/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.4ms)
+
+
+Started GET "/mobiles" for 127.0.0.1 at 2012-01-12 16:58:06 +0100
+
+ActionController::RoutingError (No route matches [GET] "/mobiles"):
+  
+
+Rendered /home/michal/.gems/ruby/1.9.1/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.5ms)
+
+
+Started GET "/mobiles" for 127.0.0.1 at 2012-01-12 16:58:07 +0100
+
+ActionController::RoutingError (No route matches [GET] "/mobiles"):
+  
+
+Rendered /home/michal/.gems/ruby/1.9.1/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.4ms)
+
+
+Started GET "/mobiles" for 127.0.0.1 at 2012-01-12 16:58:07 +0100
+
+ActionController::RoutingError (No route matches [GET] "/mobiles"):
+  
+
+Rendered /home/michal/.gems/ruby/1.9.1/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.4ms)
+
+
+Started GET "/mobiles" for 127.0.0.1 at 2012-01-12 16:58:08 +0100
+
+ActionController::RoutingError (No route matches [GET] "/mobiles"):
+  
+
+Rendered /home/michal/.gems/ruby/1.9.1/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.5ms)
+
+
+Started GET "/mobiles" for 127.0.0.1 at 2012-01-12 16:58:08 +0100
+
+ActionController::RoutingError (No route matches [GET] "/mobiles"):
+  
+
+Rendered /home/michal/.gems/ruby/1.9.1/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.4ms)
+
+
+Started GET "/mobiles" for 127.0.0.1 at 2012-01-12 16:58:08 +0100
+
+ActionController::RoutingError (No route matches [GET] "/mobiles"):
+  
+
+Rendered /home/michal/.gems/ruby/1.9.1/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.5ms)
+
+
+Started GET "/mobiles" for 127.0.0.1 at 2012-01-12 16:58:09 +0100
+
+ActionController::RoutingError (No route matches [GET] "/mobiles"):
+  
+
+Rendered /home/michal/.gems/ruby/1.9.1/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.4ms)
+
+
+Started GET "/mobiles" for 127.0.0.1 at 2012-01-12 16:58:09 +0100
+
+ActionController::RoutingError (No route matches [GET] "/mobiles"):
+  
+
+Rendered /home/michal/.gems/ruby/1.9.1/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.4ms)
+
+
+Started GET "/mobiles" for 127.0.0.1 at 2012-01-12 16:58:09 +0100
+
+ActionController::RoutingError (No route matches [GET] "/mobiles"):
+  
+
+Rendered /home/michal/.gems/ruby/1.9.1/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.4ms)
+
+
+Started GET "/mobiles" for 127.0.0.1 at 2012-01-12 16:58:09 +0100
+
+ActionController::RoutingError (No route matches [GET] "/mobiles"):
+  
+
+Rendered /home/michal/.gems/ruby/1.9.1/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (25.2ms)
+MONGODB [WARNING] Please note that logging negatively impacts client-side performance. You should set your logging level no lower than :info in production.
+MONGODB admin['$cmd'].find({:ismaster=>1}).limit(-1)
+
+
+Started GET "/producent" for 127.0.0.1 at 2012-01-12 17:01:00 +0100
+
+ActionController::RoutingError (No route matches [GET] "/producent"):
+  
+
+Rendered /home/michal/.gems/ruby/1.9.1/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (13.4ms)
+
+
+Started GET "/producents" for 127.0.0.1 at 2012-01-12 17:01:03 +0100
+  Processing by ProducentsController#index as HTML
+MONGODB mobiles_development['system.namespaces'].find({})
+MONGODB mobiles_development['$cmd'].find({:create=>"producents"}).limit(-1)
+MONGODB mobiles_development['producents'].find({})
+Rendered producents/index.html.erb within layouts/application (4.7ms)
+Compiled application.js  (2ms)  (pid 6327)
+Compiled producents.js  (54ms)  (pid 6327)
+Completed 200 OK in 103ms (Views: 102.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/producents.js?body=1" for 127.0.0.1 at 2012-01-12 17:01:04 +0100
+Served asset /producents.js - 200 OK (1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-01-12 17:01:04 +0100
+Served asset /jquery_ujs.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-01-12 17:01:04 +0100
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/producents/new" for 127.0.0.1 at 2012-01-12 17:01:10 +0100
+  Processing by ProducentsController#new as HTML
+Rendered producents/_form.html.erb (219.6ms)
+Rendered producents/new.html.erb within layouts/application (229.2ms)
+Completed 200 OK in 236ms (Views: 234.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-01-12 17:01:11 +0100
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/producents.js?body=1" for 127.0.0.1 at 2012-01-12 17:01:11 +0100
+Served asset /producents.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-01-12 17:01:11 +0100
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/producents" for 127.0.0.1 at 2012-01-12 17:01:14 +0100
+  Processing by ProducentsController#index as HTML
+MONGODB mobiles_development['system.namespaces'].find({})
+MONGODB mobiles_development['producents'].find({})
+Rendered producents/index.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 10ms (Views: 9.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/producents.js?body=1" for 127.0.0.1 at 2012-01-12 17:01:14 +0100
+Served asset /producents.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-01-12 17:01:14 +0100
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-01-12 17:01:14 +0100
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+MONGODB [WARNING] Please note that logging negatively impacts client-side performance. You should set your logging level no lower than :info in production.
+MONGODB admin['$cmd'].find({:ismaster=>1}).limit(-1)
+MONGODB [WARNING] Please note that logging negatively impacts client-side performance. You should set your logging level no lower than :info in production.
+MONGODB admin['$cmd'].find({:ismaster=>1}).limit(-1)
+
+
+Started GET "/" for 127.0.0.1 at 2012-01-12 17:13:24 +0100
+  Processing by ProducentsController#index as HTML
+MONGODB mobiles_development['system.namespaces'].find({})
+MONGODB mobiles_development['producents'].find({})
+Rendered producents/index.html.erb within layouts/application (16.1ms)
+Completed 200 OK in 110ms (Views: 109.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/producents.js?body=1" for 127.0.0.1 at 2012-01-12 17:13:24 +0100
+Served asset /producents.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-01-12 17:13:24 +0100
+Served asset /jquery_ujs.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-01-12 17:13:24 +0100
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/producents/new" for 127.0.0.1 at 2012-01-12 17:13:31 +0100
+  Processing by ProducentsController#new as HTML
+Rendered producents/_form.html.erb (181.9ms)
+Rendered producents/new.html.erb within layouts/application (214.3ms)
+Completed 200 OK in 221ms (Views: 219.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-01-12 17:13:32 +0100
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/producents.js?body=1" for 127.0.0.1 at 2012-01-12 17:13:32 +0100
+Served asset /producents.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-01-12 17:13:32 +0100
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/producents" for 127.0.0.1 at 2012-01-12 17:13:36 +0100
+  Processing by ProducentsController#index as HTML
+MONGODB mobiles_development['system.namespaces'].find({})
+MONGODB mobiles_development['producents'].find({})
+Rendered producents/index.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 8ms (Views: 7.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-01-12 17:13:36 +0100
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-01-12 17:13:36 +0100
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/producents.js?body=1" for 127.0.0.1 at 2012-01-12 17:13:36 +0100
+Served asset /producents.js - 304 Not Modified (0ms)
+MONGODB [WARNING] Please note that logging negatively impacts client-side performance. You should set your logging level no lower than :info in production.
+MONGODB admin['$cmd'].find({:ismaster=>1}).limit(-1)
+
+
+Started GET "/" for 127.0.0.1 at 2012-01-12 17:17:39 +0100
+  Processing by ProducentsController#index as HTML
+Completed 401 Unauthorized in 0ms
+
+
+Started GET "/" for 127.0.0.1 at 2012-01-12 17:17:47 +0100
+  Processing by ProducentsController#index as HTML
+MONGODB mobiles_development['system.namespaces'].find({})
+MONGODB mobiles_development['producents'].find({})
+Rendered producents/index.html.erb within layouts/application (17.7ms)
+Completed 200 OK in 137ms (Views: 135.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-01-12 17:17:48 +0100
+Served asset /jquery.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-01-12 17:17:48 +0100
+Served asset /jquery_ujs.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/producents.js?body=1" for 127.0.0.1 at 2012-01-12 17:17:48 +0100
+Served asset /producents.js - 304 Not Modified (1ms)
+
+
+Started GET "/producents/new" for 127.0.0.1 at 2012-01-12 17:17:51 +0100
+  Processing by ProducentsController#new as HTML
+Rendered producents/_form.html.erb (185.2ms)
+Rendered producents/new.html.erb within layouts/application (194.6ms)
+Completed 200 OK in 201ms (Views: 200.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/producents.js?body=1" for 127.0.0.1 at 2012-01-12 17:17:52 +0100
+Served asset /producents.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-01-12 17:17:52 +0100
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-01-12 17:17:52 +0100
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/producents" for 127.0.0.1 at 2012-01-12 17:17:53 +0100
+  Processing by ProducentsController#index as HTML
+MONGODB mobiles_development['system.namespaces'].find({})
+MONGODB mobiles_development['producents'].find({})
+Rendered producents/index.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 32ms (Views: 31.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-01-12 17:17:54 +0100
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/producents.js?body=1" for 127.0.0.1 at 2012-01-12 17:17:54 +0100
+Served asset /producents.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-01-12 17:17:54 +0100
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-01-12 17:17:58 +0100
+  Processing by ProducentsController#index as HTML
+MONGODB mobiles_development['system.namespaces'].find({})
+MONGODB mobiles_development['producents'].find({})
+Rendered producents/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 8ms (Views: 7.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-01-12 17:17:58 +0100
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/producents.js?body=1" for 127.0.0.1 at 2012-01-12 17:17:58 +0100
+Served asset /producents.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-01-12 17:17:58 +0100
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-01-12 17:18:00 +0100
+  Processing by ProducentsController#index as HTML
+MONGODB mobiles_development['system.namespaces'].find({})
+MONGODB mobiles_development['producents'].find({})
+Rendered producents/index.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 8ms (Views: 7.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-01-12 17:18:00 +0100
+Served asset /jquery.js - 200 OK (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-01-12 17:18:00 +0100
+Served asset /jquery_ujs.js - 200 OK (0ms)
+
+
+Started GET "/assets/producents.js?body=1" for 127.0.0.1 at 2012-01-12 17:18:00 +0100
+Served asset /producents.js - 200 OK (0ms)
+MONGODB [WARNING] Please note that logging negatively impacts client-side performance. You should set your logging level no lower than :info in production.
+MONGODB admin['$cmd'].find({:ismaster=>1}).limit(-1)
+
+
+Started GET "/" for 127.0.0.1 at 2012-01-12 17:24:44 +0100
+  Processing by ProducentsController#index as HTML
+MONGODB mobiles_development['system.namespaces'].find({})
+MONGODB mobiles_development['producents'].find({})
+Rendered producents/index.html.erb within layouts/application (16.0ms)
+Completed 200 OK in 113ms (Views: 112.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-01-12 17:24:44 +0100
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-01-12 17:24:44 +0100
+Served asset /jquery_ujs.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/producents.js?body=1" for 127.0.0.1 at 2012-01-12 17:24:44 +0100
+Served asset /producents.js - 304 Not Modified (1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-01-12 17:24:45 +0100
+  Processing by ProducentsController#index as HTML
+MONGODB mobiles_development['system.namespaces'].find({})
+MONGODB mobiles_development['producents'].find({})
+Rendered producents/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 8ms (Views: 7.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-01-12 17:24:46 +0100
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/producents.js?body=1" for 127.0.0.1 at 2012-01-12 17:24:46 +0100
+Served asset /producents.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-01-12 17:24:46 +0100
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-01-12 17:24:46 +0100
+  Processing by ProducentsController#index as HTML
+MONGODB mobiles_development['system.namespaces'].find({})
+MONGODB mobiles_development['producents'].find({})
+Rendered producents/index.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 8ms (Views: 7.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-01-12 17:24:46 +0100
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-01-12 17:24:46 +0100
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/producents.js?body=1" for 127.0.0.1 at 2012-01-12 17:24:46 +0100
+Served asset /producents.js - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-01-12 17:24:46 +0100
+  Processing by ProducentsController#index as HTML
+MONGODB mobiles_development['system.namespaces'].find({})
+MONGODB mobiles_development['producents'].find({})
+Rendered producents/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 9ms (Views: 7.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-01-12 17:24:46 +0100
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-01-12 17:24:46 +0100
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/producents.js?body=1" for 127.0.0.1 at 2012-01-12 17:24:46 +0100
+Served asset /producents.js - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-01-12 17:24:46 +0100
+  Processing by ProducentsController#index as HTML
+MONGODB mobiles_development['system.namespaces'].find({})
+MONGODB mobiles_development['producents'].find({})
+Rendered producents/index.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 9ms (Views: 8.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-01-12 17:24:46 +0100
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/producents.js?body=1" for 127.0.0.1 at 2012-01-12 17:24:46 +0100
+Served asset /producents.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-01-12 17:24:46 +0100
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-01-12 17:24:46 +0100
+  Processing by ProducentsController#index as HTML
+MONGODB mobiles_development['system.namespaces'].find({})
+MONGODB mobiles_development['producents'].find({})
+Rendered producents/index.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 11ms (Views: 10.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-01-12 17:24:47 +0100
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-01-12 17:24:47 +0100
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/producents.js?body=1" for 127.0.0.1 at 2012-01-12 17:24:47 +0100
+Served asset /producents.js - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-01-12 17:24:47 +0100
+  Processing by ProducentsController#index as HTML
+MONGODB mobiles_development['system.namespaces'].find({})
+MONGODB mobiles_development['producents'].find({})
+Rendered producents/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 8ms (Views: 7.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/producents.js?body=1" for 127.0.0.1 at 2012-01-12 17:24:47 +0100
+Served asset /producents.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-01-12 17:24:47 +0100
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-01-12 17:24:47 +0100
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-01-12 17:24:47 +0100
+  Processing by ProducentsController#index as HTML
+MONGODB mobiles_development['system.namespaces'].find({})
+MONGODB mobiles_development['producents'].find({})
+Rendered producents/index.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 8ms (Views: 7.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-01-12 17:24:47 +0100
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-01-12 17:24:47 +0100
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/producents.js?body=1" for 127.0.0.1 at 2012-01-12 17:24:47 +0100
+Served asset /producents.js - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-01-12 17:24:47 +0100
+  Processing by ProducentsController#index as HTML
+MONGODB mobiles_development['system.namespaces'].find({})
+MONGODB mobiles_development['producents'].find({})
+Rendered producents/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 11ms (Views: 10.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-01-12 17:24:47 +0100
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/producents.js?body=1" for 127.0.0.1 at 2012-01-12 17:24:47 +0100
+Served asset /producents.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-01-12 17:24:47 +0100
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-01-12 17:24:47 +0100
+  Processing by ProducentsController#index as HTML
+MONGODB mobiles_development['system.namespaces'].find({})
+MONGODB mobiles_development['producents'].find({})
+Rendered producents/index.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 10ms (Views: 9.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/producents.js?body=1" for 127.0.0.1 at 2012-01-12 17:24:47 +0100
+Served asset /producents.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-01-12 17:24:47 +0100
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-01-12 17:24:47 +0100
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-01-12 17:24:47 +0100
+  Processing by ProducentsController#index as HTML
+MONGODB mobiles_development['system.namespaces'].find({})
+MONGODB mobiles_development['producents'].find({})
+Rendered producents/index.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 8ms (Views: 7.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-01-12 17:24:47 +0100
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/producents.js?body=1" for 127.0.0.1 at 2012-01-12 17:24:47 +0100
+Served asset /producents.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-01-12 17:24:47 +0100
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-01-12 17:24:47 +0100
+  Processing by ProducentsController#index as HTML
+MONGODB mobiles_development['system.namespaces'].find({})
+MONGODB mobiles_development['producents'].find({})
+Rendered producents/index.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 8ms (Views: 8.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/producents.js?body=1" for 127.0.0.1 at 2012-01-12 17:24:48 +0100
+Served asset /producents.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-01-12 17:24:48 +0100
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-01-12 17:24:48 +0100
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-01-12 17:24:48 +0100
+  Processing by ProducentsController#index as HTML
+MONGODB mobiles_development['system.namespaces'].find({})
+MONGODB mobiles_development['producents'].find({})
+Rendered producents/index.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 8ms (Views: 7.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-01-12 17:24:48 +0100
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-01-12 17:24:48 +0100
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/producents.js?body=1" for 127.0.0.1 at 2012-01-12 17:24:48 +0100
+Served asset /producents.js - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-01-12 17:24:55 +0100
+  Processing by ProducentsController#index as HTML
+MONGODB mobiles_development['system.namespaces'].find({})
+MONGODB mobiles_development['producents'].find({})
+Rendered producents/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 9ms (Views: 8.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-01-12 17:24:55 +0100
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/producents.js?body=1" for 127.0.0.1 at 2012-01-12 17:24:55 +0100
+Served asset /producents.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-01-12 17:24:55 +0100
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-01-12 17:24:55 +0100
+  Processing by ProducentsController#index as HTML
+MONGODB mobiles_development['system.namespaces'].find({})
+MONGODB mobiles_development['producents'].find({})
+Rendered producents/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 8ms (Views: 7.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-01-12 17:24:55 +0100
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/producents.js?body=1" for 127.0.0.1 at 2012-01-12 17:24:55 +0100
+Served asset /producents.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-01-12 17:24:55 +0100
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-01-12 17:24:56 +0100
+  Processing by ProducentsController#index as HTML
+MONGODB mobiles_development['system.namespaces'].find({})
+MONGODB mobiles_development['producents'].find({})
+Rendered producents/index.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 32ms (Views: 31.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/producents.js?body=1" for 127.0.0.1 at 2012-01-12 17:24:56 +0100
+Served asset /producents.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-01-12 17:24:56 +0100
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-01-12 17:24:56 +0100
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-01-12 17:24:56 +0100
+  Processing by ProducentsController#index as HTML
+MONGODB mobiles_development['system.namespaces'].find({})
+MONGODB mobiles_development['producents'].find({})
+Rendered producents/index.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 12ms (Views: 11.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/producents.js?body=1" for 127.0.0.1 at 2012-01-12 17:24:56 +0100
+Served asset /producents.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-01-12 17:24:56 +0100
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-01-12 17:24:56 +0100
+Served asset /jquery.js - 304 Not Modified (0ms)
+MONGODB [WARNING] Please note that logging negatively impacts client-side performance. You should set your logging level no lower than :info in production.
+MONGODB admin['$cmd'].find({:ismaster=>1}).limit(-1)
+  [1m[36m (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Migrating to CreateMobiles (20120111225222)
+  [1m[35m (0.2ms)[0m  select sqlite_version(*)
+  [1m[36m (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+  [1m[35m (0.0ms)[0m  PRAGMA index_list("mobiles")
+MONGODB [WARNING] Please note that logging negatively impacts client-side performance. You should set your logging level no lower than :info in production.
+MONGODB admin['$cmd'].find({:ismaster=>1}).limit(-1)
+
+
+Started GET "/" for 127.0.0.1 at 2012-01-12 17:25:45 +0100
+  Processing by ProducentsController#index as HTML
+MONGODB mobiles_development['system.namespaces'].find({})
+MONGODB mobiles_development['producents'].find({})
+Rendered producents/index.html.erb within layouts/application (16.0ms)
+Completed 200 OK in 118ms (Views: 117.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/producents.js?body=1" for 127.0.0.1 at 2012-01-12 17:25:45 +0100
+Served asset /producents.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-01-12 17:25:45 +0100
+Served asset /jquery_ujs.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-01-12 17:25:45 +0100
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-01-12 17:25:48 +0100
+  Processing by ProducentsController#index as HTML
+MONGODB mobiles_development['system.namespaces'].find({})
+MONGODB mobiles_development['producents'].find({})
+Rendered producents/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 9ms (Views: 8.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-01-12 17:25:48 +0100
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-01-12 17:25:48 +0100
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/producents.js?body=1" for 127.0.0.1 at 2012-01-12 17:25:48 +0100
+Served asset /producents.js - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-01-12 17:25:49 +0100
+  Processing by ProducentsController#index as HTML
+MONGODB mobiles_development['system.namespaces'].find({})
+MONGODB mobiles_development['producents'].find({})
+Rendered producents/index.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 9ms (Views: 9.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-01-12 17:25:49 +0100
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/producents.js?body=1" for 127.0.0.1 at 2012-01-12 17:25:49 +0100
+Served asset /producents.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-01-12 17:25:49 +0100
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-01-12 17:25:49 +0100
+  Processing by ProducentsController#index as HTML
+MONGODB mobiles_development['system.namespaces'].find({})
+MONGODB mobiles_development['producents'].find({})
+Rendered producents/index.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 8ms (Views: 7.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-01-12 17:25:49 +0100
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/producents.js?body=1" for 127.0.0.1 at 2012-01-12 17:25:49 +0100
+Served asset /producents.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-01-12 17:25:49 +0100
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-01-12 17:25:49 +0100
+  Processing by ProducentsController#index as HTML
+MONGODB mobiles_development['system.namespaces'].find({})
+MONGODB mobiles_development['producents'].find({})
+Rendered producents/index.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 9ms (Views: 8.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-01-12 17:25:49 +0100
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/producents.js?body=1" for 127.0.0.1 at 2012-01-12 17:25:49 +0100
+Served asset /producents.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-01-12 17:25:49 +0100
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-01-12 17:25:49 +0100
+  Processing by ProducentsController#index as HTML
+MONGODB mobiles_development['system.namespaces'].find({})
+MONGODB mobiles_development['producents'].find({})
+Rendered producents/index.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 9ms (Views: 8.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/producents.js?body=1" for 127.0.0.1 at 2012-01-12 17:25:49 +0100
+Served asset /producents.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-01-12 17:25:49 +0100
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-01-12 17:25:49 +0100
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-01-12 17:25:49 +0100
+  Processing by ProducentsController#index as HTML
+MONGODB mobiles_development['system.namespaces'].find({})
+MONGODB mobiles_development['producents'].find({})
+Rendered producents/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 10ms (Views: 9.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-01-12 17:25:49 +0100
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-01-12 17:25:49 +0100
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/producents.js?body=1" for 127.0.0.1 at 2012-01-12 17:25:49 +0100
+Served asset /producents.js - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-01-12 17:25:50 +0100
+  Processing by ProducentsController#index as HTML
+MONGODB mobiles_development['system.namespaces'].find({})
+MONGODB mobiles_development['producents'].find({})
+Rendered producents/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 8ms (Views: 7.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/producents.js?body=1" for 127.0.0.1 at 2012-01-12 17:25:50 +0100
+Served asset /producents.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-01-12 17:25:50 +0100
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-01-12 17:25:50 +0100
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-01-12 17:25:50 +0100
+  Processing by ProducentsController#index as HTML
+MONGODB mobiles_development['system.namespaces'].find({})
+MONGODB mobiles_development['producents'].find({})
+Rendered producents/index.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 8ms (Views: 6.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-01-12 17:25:50 +0100
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-01-12 17:25:50 +0100
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/producents.js?body=1" for 127.0.0.1 at 2012-01-12 17:25:50 +0100
+Served asset /producents.js - 304 Not Modified (0ms)
+MONGODB [WARNING] Please note that logging negatively impacts client-side performance. You should set your logging level no lower than :info in production.
+MONGODB admin['$cmd'].find({:ismaster=>1}).limit(-1)
+  [1m[36m (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+MONGODB [WARNING] Please note that logging negatively impacts client-side performance. You should set your logging level no lower than :info in production.
+MONGODB admin['$cmd'].find({:ismaster=>1}).limit(-1)
+
+
+Started GET "/" for 127.0.0.1 at 2012-01-12 17:26:18 +0100
+  Processing by ProducentsController#index as HTML
+MONGODB mobiles_development['system.namespaces'].find({})
+MONGODB mobiles_development['producents'].find({})
+Rendered producents/index.html.erb within layouts/application (15.9ms)
+Completed 200 OK in 114ms (Views: 113.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-01-12 17:26:18 +0100
+Served asset /jquery_ujs.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-01-12 17:26:18 +0100
+Served asset /jquery.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/producents.js?body=1" for 127.0.0.1 at 2012-01-12 17:26:18 +0100
+Served asset /producents.js - 304 Not Modified (4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-01-12 17:26:19 +0100
+  Processing by ProducentsController#index as HTML
+MONGODB mobiles_development['system.namespaces'].find({})
+MONGODB mobiles_development['producents'].find({})
+Rendered producents/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 8ms (Views: 7.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/producents.js?body=1" for 127.0.0.1 at 2012-01-12 17:26:19 +0100
+Served asset /producents.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-01-12 17:26:19 +0100
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-01-12 17:26:19 +0100
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-01-12 17:26:19 +0100
+  Processing by ProducentsController#index as HTML
+MONGODB mobiles_development['system.namespaces'].find({})
+MONGODB mobiles_development['producents'].find({})
+Rendered producents/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 8ms (Views: 7.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-01-12 17:26:19 +0100
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-01-12 17:26:19 +0100
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/producents.js?body=1" for 127.0.0.1 at 2012-01-12 17:26:19 +0100
+Served asset /producents.js - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-01-12 17:26:19 +0100
+  Processing by ProducentsController#index as HTML
+MONGODB mobiles_development['system.namespaces'].find({})
+MONGODB mobiles_development['producents'].find({})
+Rendered producents/index.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 35ms (Views: 34.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-01-12 17:26:19 +0100
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/producents.js?body=1" for 127.0.0.1 at 2012-01-12 17:26:19 +0100
+Served asset /producents.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-01-12 17:26:19 +0100
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-01-12 17:26:19 +0100
+  Processing by ProducentsController#index as HTML
+MONGODB mobiles_development['system.namespaces'].find({})
+MONGODB mobiles_development['producents'].find({})
+Rendered producents/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 9ms (Views: 8.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-01-12 17:26:19 +0100
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/producents.js?body=1" for 127.0.0.1 at 2012-01-12 17:26:19 +0100
+Served asset /producents.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-01-12 17:26:19 +0100
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-01-12 17:26:20 +0100
+  Processing by ProducentsController#index as HTML
+MONGODB mobiles_development['system.namespaces'].find({})
+MONGODB mobiles_development['producents'].find({})
+Rendered producents/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 8ms (Views: 7.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-01-12 17:26:20 +0100
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/producents.js?body=1" for 127.0.0.1 at 2012-01-12 17:26:20 +0100
+Served asset /producents.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-01-12 17:26:20 +0100
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-01-12 17:26:20 +0100
+  Processing by ProducentsController#index as HTML
+MONGODB mobiles_development['system.namespaces'].find({})
+MONGODB mobiles_development['producents'].find({})
+Rendered producents/index.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 10ms (Views: 9.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-01-12 17:26:20 +0100
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-01-12 17:26:20 +0100
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/producents.js?body=1" for 127.0.0.1 at 2012-01-12 17:26:20 +0100
+Served asset /producents.js - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-01-12 17:26:20 +0100
+  Processing by ProducentsController#index as HTML
+MONGODB mobiles_development['system.namespaces'].find({})
+MONGODB mobiles_development['producents'].find({})
+Rendered producents/index.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 8ms (Views: 7.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-01-12 17:26:20 +0100
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-01-12 17:26:20 +0100
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/producents.js?body=1" for 127.0.0.1 at 2012-01-12 17:26:20 +0100
+Served asset /producents.js - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-01-12 17:26:20 +0100
+  Processing by ProducentsController#index as HTML
+MONGODB mobiles_development['system.namespaces'].find({})
+MONGODB mobiles_development['producents'].find({})
+Rendered producents/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 9ms (Views: 7.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/producents.js?body=1" for 127.0.0.1 at 2012-01-12 17:26:20 +0100
+Served asset /producents.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-01-12 17:26:20 +0100
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-01-12 17:26:20 +0100
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-01-12 17:26:20 +0100
+  Processing by ProducentsController#index as HTML
+MONGODB mobiles_development['system.namespaces'].find({})
+MONGODB mobiles_development['producents'].find({})
+Rendered producents/index.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 11ms (Views: 11.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-01-12 17:26:20 +0100
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/producents.js?body=1" for 127.0.0.1 at 2012-01-12 17:26:20 +0100
+Served asset /producents.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-01-12 17:26:20 +0100
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-01-12 17:26:20 +0100
+  Processing by ProducentsController#index as HTML
+MONGODB mobiles_development['system.namespaces'].find({})
+MONGODB mobiles_development['producents'].find({})
+Rendered producents/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 9ms (Views: 8.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-01-12 17:26:21 +0100
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-01-12 17:26:21 +0100
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/producents.js?body=1" for 127.0.0.1 at 2012-01-12 17:26:21 +0100
+Served asset /producents.js - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-01-12 17:26:23 +0100
+  Processing by ProducentsController#index as HTML
+MONGODB mobiles_development['system.namespaces'].find({})
+MONGODB mobiles_development['producents'].find({})
+Rendered producents/index.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 9ms (Views: 8.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-01-12 17:26:23 +0100
+Served asset /jquery.js - 200 OK (4ms)
+
+
+Started GET "/assets/producents.js?body=1" for 127.0.0.1 at 2012-01-12 17:26:23 +0100
+Served asset /producents.js - 200 OK (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-01-12 17:26:23 +0100
+Served asset /jquery_ujs.js - 200 OK (0ms)

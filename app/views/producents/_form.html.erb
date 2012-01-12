@@ -1,0 +1,10 @@
+<%= semantic_form_for @producent do |f| %>
+  <%= f.inputs do %>
+    <%= f.input :id_number %>
+    <%= f.input :nazwa %>
+  <% end %>
+
+  <%= f.buttons do %>
+    <%= f.commit_button %>
+  <% end %>
+<% end %>

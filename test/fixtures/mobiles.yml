@@ -1,9 +1,0 @@
-# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
-
-one:
-  source: MyString
-  quotation: MyText
-
-two:
-  source: MyString
-  quotation: MyText
