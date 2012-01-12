@@ -1,0 +1,76 @@
+<% title "Show telefon" %>
+
+<% if notice -%>
+<div id="notice"><%= notice %></div>
+<% end -%>
+
+<article class="single">
+  <div class="attribute">
+    <span class="name">Model</span>
+    <span class="value"><%= @telefon.model %></span>
+  </div>
+  <div class="attribute">
+    <span class="name">Producents</span>
+    <span class="value"><%= @telefon.producents_id %></span>
+  </div>
+  <div class="attribute">
+    <span class="name">Ogolne</span>
+    <span class="value"><%= @telefon.ogolne %></span>
+  </div>
+  <div class="attribute">
+    <span class="name">Konstrukcja</span>
+    <span class="value"><%= @telefon.konstrukcja %></span>
+  </div>
+  <div class="attribute">
+    <span class="name">Siec</span>
+    <span class="value"><%= @telefon.siec %></span>
+  </div>
+  <div class="attribute">
+    <span class="name">Rozmiar</span>
+    <span class="value"><%= @telefon.rozmiar %></span>
+  </div>
+  <div class="attribute">
+    <span class="name">Transmisja</span>
+    <span class="value"><%= @telefon.transmisja %></span>
+  </div>
+  <div class="attribute">
+    <span class="name">Komunikacja</span>
+    <span class="value"><%= @telefon.komunikacja %></span>
+  </div>
+  <div class="attribute">
+    <span class="name">Wyswietlacz</span>
+    <span class="value"><%= @telefon.wyswietlacz %></span>
+  </div>
+  <div class="attribute">
+    <span class="name">System</span>
+    <span class="value"><%= @telefon.system %></span>
+  </div>
+  <div class="attribute">
+    <span class="name">Pamiec</span>
+    <span class="value"><%= @telefon.pamiec %></span>
+  </div>
+  <div class="attribute">
+    <span class="name">Aparat</span>
+    <span class="value"><%= @telefon.aparat %></span>
+  </div>
+  <div class="attribute">
+    <span class="name">Multimedia</span>
+    <span class="value"><%= @telefon.multimedia %></span>
+  </div>
+  <div class="attribute">
+    <span class="name">Funckje</span>
+    <span class="value"><%= @telefon.funckje %></span>
+  </div>
+  <div class="attribute">
+    <span class="name">Zasilanie</span>
+    <span class="value"><%= @telefon.zasilanie %></span>
+  </div>
+  <div class="attribute">
+    <span class="name">Cena</span>
+    <span class="value"><%= @telefon.cena %></span>
+  </div>
+  <div class="link">
+    <%= link_to 'Edit', edit_telefon_path(@telefon) %> |
+    <%= link_to 'Back', telefons_path %>
+  </div>
+</article>

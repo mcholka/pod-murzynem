@@ -1,4 +1,4 @@
-$html-background-color: yellow;
+$html-background-color: green;
 /*
    ==|== layout primary styles =================================================
    Author:
@@ -23,9 +23,11 @@ header {
   width: 600px;
   margin: 0 auto;
   padding: 18px;
-  background-color: darken($html-background-color, 32%);
+  background-color: darken($html-background-color, 5%);
   color: #FFF;
   h1 {
     font-size: 140%;
   }
 }
+
+

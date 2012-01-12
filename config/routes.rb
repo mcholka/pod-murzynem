@@ -1,4 +1,6 @@
 Mobile::Application.routes.draw do
+  resources :telefons
+
   resources :producents
 
   # The priority is based upon order of creation:

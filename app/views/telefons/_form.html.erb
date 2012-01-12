@@ -1,0 +1,26 @@
+<%= simple_form_for(@telefon) do |f| %>
+  <%= f.error_notification %>
+
+  <div class="inputs">
+    <%= f.input :model %>
+    <%= f.input :producents_id %>
+    <%= f.input :ogolne %>
+    <%= f.input :konstrukcja %>
+    <%= f.input :siec %>
+    <%= f.input :rozmiar %>
+    <%= f.input :transmisja %>
+    <%= f.input :komunikacja %>
+    <%= f.input :wyswietlacz %>
+    <%= f.input :system %>
+    <%= f.input :pamiec %>
+    <%= f.input :aparat %>
+    <%= f.input :multimedia %>
+    <%= f.input :funckje %>
+    <%= f.input :zasilanie %>
+    <%= f.input :cena %>
+  </div>
+
+  <div class="actions">
+    <%= f.button :submit %>
+  </div>
+<% end %>
