@@ -1,0 +1,23 @@
+<% title "All producents" %>
+
+<% @producents.each do |producent| %>
+<article class="index">
+  <div class="attribute">
+    <span class="name">Id number</span>
+    <span class="value"><%= producent.id_number %></span>
+  </div>
+    <div class="attribute">
+    <span class="name">Nazwa</span>
+    <span class="value"><%= producent.nazwa %></span>
+  </div>
+    <div class="links">
+    <%= link_to 'Show', producent %> |
+    <%= link_to 'Edit', edit_producent_path(producent) %> |
+    <%= link_to 'Destroy', producent, confirm: 'Are you sure?', method: :delete %>
+  </div>
+</article>
+<% end %>
+
+<div class="link">
+  <%= link_to 'New Producent', new_producent_path %>
+</div>
