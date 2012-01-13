@@ -1,19 +1,11 @@
-<% title "All producents" %>
+<% title "Producenci" %>
 
 <% @producents.each do |producent| %>
 <article class="index">
   <div class="attribute">
-    <span class="name">Nazwa</span>
-    <span class="value"><%= producent.nazwa %></span>
-  </div>
-    <div class="attribute">
-    <span class="name">Link</span>
-    <span class="value"><%= producent.link %></span>
-  </div>
-    <div class="links">
-    <%= link_to 'Show', producent %> |
-    <%= link_to 'Edit', edit_producent_path(producent) %> |
-    <%= link_to 'Destroy', producent, confirm: 'Are you sure?', method: :delete %>
+   <!-- <span class="name">Nazwa</span> -->
+    <img src="<%= producent.link %>" height="100" width="150" />
+    <%= link_to 'Telefony', telefons_path %>
   </div>
 </article>
 <% end %>
