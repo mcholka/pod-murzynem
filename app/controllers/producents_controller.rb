@@ -9,8 +9,8 @@ class ProducentsController < ApplicationController
   # GET /producents/1
   # GET /producents/1.xml
   def show
-    @producent = Producent.find(params[:id])
-    respond_with(@producent)
+   @producent = Producent.find(params[:id])
+   respond_with(@producent)
   end
 
   # GET /producents/new

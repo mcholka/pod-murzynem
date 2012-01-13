@@ -1,4 +1,6 @@
 Mobile::Application.routes.draw do
+  resources :telefons
+
   resources :producents
 
 root :to => 'producents#index'

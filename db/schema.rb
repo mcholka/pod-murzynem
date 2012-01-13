@@ -11,10 +11,26 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120113093354) do
+ActiveRecord::Schema.define(:version => 20120113095120) do
 
   create_table "producents", :force => true do |t|
     t.string   "nazwa"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "telefons", :force => true do |t|
+    t.integer  "producents_id"
+    t.string   "model"
+    t.string   "siec"
+    t.string   "ekran"
+    t.string   "foto"
+    t.string   "bateria"
+    t.string   "urzadzenie"
+    t.string   "system"
+    t.string   "wymiary"
+    t.string   "waga"
+    t.string   "cena"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

@@ -1,0 +1,21 @@
+<%= simple_form_for(@telefon) do |f| %>
+  <%= f.error_notification %>
+
+  <div class="inputs">
+    <%= f.input :producents_id %>
+    <%= f.input :model %>
+    <%= f.input :siec %>
+    <%= f.input :ekran %>
+    <%= f.input :foto %>
+    <%= f.input :bateria %>
+    <%= f.input :urzadzenie %>
+    <%= f.input :system %>
+    <%= f.input :wymiary %>
+    <%= f.input :waga %>
+    <%= f.input :cena %>
+  </div>
+
+  <div class="actions">
+    <%= f.button :submit %>
+  </div>
+<% end %>

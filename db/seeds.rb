@@ -14,3 +14,13 @@ producents = Array.new
    b = Producent.create!(a)
    producents << b
  end
+
+json = ActiveSupport::JSON.decode(File.read('db/seeds/telefons.json'))
+
+Telefon.delete_all
+telefons = Array.new
+ json.each do |a|
+   b = Telefon.create!(a)
+   telefons << b
+ end
+

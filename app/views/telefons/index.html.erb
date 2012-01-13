@@ -1,0 +1,59 @@
+<% title "All telefons" %>
+
+<% @telefons.each do |telefon| %>
+<article class="index">
+  <div class="attribute">
+    <span class="name">Producents</span>
+    <span class="value"><%= telefon.producents_id %></span>
+  </div>
+    <div class="attribute">
+    <span class="name">Model</span>
+    <span class="value"><%= telefon.model %></span>
+  </div>
+    <div class="attribute">
+    <span class="name">Siec</span>
+    <span class="value"><%= telefon.siec %></span>
+  </div>
+    <div class="attribute">
+    <span class="name">Ekran</span>
+    <span class="value"><%= telefon.ekran %></span>
+  </div>
+    <div class="attribute">
+    <span class="name">Foto</span>
+    <span class="value"><%= telefon.foto %></span>
+  </div>
+    <div class="attribute">
+    <span class="name">Bateria</span>
+    <span class="value"><%= telefon.bateria %></span>
+  </div>
+    <div class="attribute">
+    <span class="name">Urzadzenie</span>
+    <span class="value"><%= telefon.urzadzenie %></span>
+  </div>
+    <div class="attribute">
+    <span class="name">System</span>
+    <span class="value"><%= telefon.system %></span>
+  </div>
+    <div class="attribute">
+    <span class="name">Wymiary</span>
+    <span class="value"><%= telefon.wymiary %></span>
+  </div>
+    <div class="attribute">
+    <span class="name">Waga</span>
+    <span class="value"><%= telefon.waga %></span>
+  </div>
+    <div class="attribute">
+    <span class="name">Cena</span>
+    <span class="value"><%= telefon.cena %></span>
+  </div>
+    <div class="links">
+    <%= link_to 'Show', telefon %> |
+    <%= link_to 'Edit', edit_telefon_path(telefon) %> |
+    <%= link_to 'Destroy', telefon, confirm: 'Are you sure?', method: :delete %>
+  </div>
+</article>
+<% end %>
+
+<div class="link">
+  <%= link_to 'New Telefon', new_telefon_path %>
+</div>

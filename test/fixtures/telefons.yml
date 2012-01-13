@@ -1,0 +1,27 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  producents_id: 1
+  model: MyString
+  siec: MyString
+  ekran: MyString
+  foto: MyString
+  bateria: MyString
+  urzadzenie: MyString
+  system: MyString
+  wymiary: MyString
+  waga: MyString
+  cena: MyString
+
+two:
+  producents_id: 1
+  model: MyString
+  siec: MyString
+  ekran: MyString
+  foto: MyString
+  bateria: MyString
+  urzadzenie: MyString
+  system: MyString
+  wymiary: MyString
+  waga: MyString
+  cena: MyString
