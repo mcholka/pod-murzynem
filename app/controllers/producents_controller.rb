@@ -9,8 +9,8 @@ class ProducentsController < ApplicationController
   # GET /producents/1
   # GET /producents/1.xml
   def show
-   @producent = Producent.find(params[:id])
-   respond_with(@producent)
+    @producent = Producent.find(params[:id])
+    respond_with(@producent)
   end
 
   # GET /producents/new
@@ -29,7 +29,7 @@ class ProducentsController < ApplicationController
   # POST /producents.xml
   def create
     @producent = Producent.new(params[:producent])
-    flash[:notice] = 'Producent was successfully created.' if @producent.save
+    @producent.save
     respond_with(@producent)
   end
 
@@ -37,7 +37,7 @@ class ProducentsController < ApplicationController
   # PUT /producents/1.xml
   def update
     @producent = Producent.find(params[:id])
-    flash[:notice] = 'Producent was successfully updated.' if @producent.update_attributes(params[:producent])
+    @producent.update_attributes(params[:producent])
     respond_with(@producent)
   end
 

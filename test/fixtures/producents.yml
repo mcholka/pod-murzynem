@@ -2,6 +2,8 @@
 
 one:
   nazwa: MyString
+  link: MyString
 
 two:
   nazwa: MyString
+  link: MyString
