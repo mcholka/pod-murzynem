@@ -1,0 +1,16 @@
+<% title "Show producent" %>
+
+<% if notice -%>
+<div id="notice"><%= notice %></div>
+<% end -%>
+
+<article class="single">
+  <div class="attribute">
+    <span class="name">Nazwa</span>
+    <span class="value"><%= @producent.nazwa %></span>
+  </div>
+  <div class="link">
+    <%= link_to 'Edit', edit_producent_path(@producent) %> |
+    <%= link_to 'Back', producents_path %>
+  </div>
+</article>
