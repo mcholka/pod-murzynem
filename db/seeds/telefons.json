@@ -14,11 +14,11 @@
 
 {"producents_id":4,"model":"Xperia X10","siec":"2G/3G","ekran":"854 x 480pix, 4cali","foto":"8,1Mpix","bateria":"1500mAh","urzadzenie":"Smartfon","system":"Android","wymiary":"119 x 63 x 13 mm", "waga":"135g","cena":"od 1050zł"},
 
-{"producents_id":5,"model":"Desire Z","siec":"2G/3G","ekran":"480 x 800pix, 3,7cali","foto":"5Mpix","bateria":"1300mAh","urzadzenie":"Smartfon","system":"Android","wymiary":"119 x 60,4 x 14,2 mm", "waga":"180g","cena":"od 949zł"},
+{"producents_id":5,"model":"GT540","siec":"2G/3G","ekran":"320 x 480pix, 3cali","foto":"3,2Mpix","bateria":"1500mAh","urzadzenie":"Smartfon","system":"Android","wymiary":"109 x 54 x 12,7 mm", "waga":"115,5g","cena":"od 460zł"},
 
-{"producents_id":5,"model":"Desire Z","siec":"2G/3G","ekran":"480 x 800pix, 3,7cali","foto":"5Mpix","bateria":"1300mAh","urzadzenie":"Smartfon","system":"Android","wymiary":"119 x 60,4 x 14,2 mm", "waga":"180g","cena":"od 949zł"},
+{"producents_id":5,"model":"E 900","siec":"2G/3G","ekran":"480 x 800pix, 3,8cali","foto":"5Mpix","bateria":"1500mAh","urzadzenie":"Smartfon","system":"Windows Phone 7","wymiary":"125 x 59,8 x 11,5 mm", "waga":"157g","cena":"od 949zł"},
 
-{"producents_id":6,"model":"Desire Z","siec":"2G/3G","ekran":"480 x 800pix, 3,7cali","foto":"5Mpix","bateria":"1300mAh","urzadzenie":"Smartfon","system":"Android","wymiary":"119 x 60,4 x 14,2 mm", "waga":"180g","cena":"od 949zł"},
+{"producents_id":6,"model":"Defy","siec":"2G/3G","ekran":"480 x 854pix, 3,7cali","foto":"5Mpix","bateria":"1540mAh","urzadzenie":"Smartfon","system":"Android","wymiary":"107 x 59 x 13,4 mm", "waga":"118g","cena":"od 870zł"},
 
-{"producents_id":6,"model":"Desire Z","siec":"2G/3G","ekran":"480 x 800pix, 3,7cali","foto":"5Mpix","bateria":"1300mAh","urzadzenie":"Smartfon","system":"Android","wymiary":"119 x 60,4 x 14,2 mm", "waga":"180g","cena":"od 949zł"}]
+{"producents_id":6,"model":"Gleam","siec":"2G","ekran":"240 x 320pix, 2,4cali","foto":"2Mpix","bateria":"750mAh","urzadzenie":"Telefon","system":"Brak","wymiary":"106 x 53 x 13,9 mm", "waga":"105g","cena":"od 305zł"}]
 
