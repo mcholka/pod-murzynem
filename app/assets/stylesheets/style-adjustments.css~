@@ -1,7 +1,7 @@
 *
 =============================================== A. Main Background Pattern ===============================================
 */
-body {background-image: url(./assets/images/background.png);}
+body {background-image: url(images/background.png);}
 
 
 /*
