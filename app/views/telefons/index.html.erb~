@@ -56,5 +56,4 @@
 
 <div class="link">
   <%= link_to 'New Telefon', new_telefon_path %>
-  <%= link_to 'Back to Producents', producents_path %>
 </div>
