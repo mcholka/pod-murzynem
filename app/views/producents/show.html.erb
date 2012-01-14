@@ -1,4 +1,4 @@
-<% title "Show producent" %>
+<% title "Podglad" %>
 
 <% if notice -%>
 <div id="notice"><%= notice %></div>
@@ -14,7 +14,7 @@
     <span class="value"><%= @producent.link %></span>
   </div>
   <div class="link">
-    <%= link_to 'Edit', edit_producent_path(@producent) %> |
-    <%= link_to 'Back', producents_path %>
+    <%= link_to 'Edytuj', edit_producent_path(@producent) %> |
+    <%= link_to 'Strona Glowna', producents_path %>
   </div>
 </article>

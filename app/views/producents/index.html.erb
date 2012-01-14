@@ -4,11 +4,11 @@
 <article class="index">
   <div class="attribute">
   <img src="<%= producent.link %>" height="100" width="150" />
-<% @id = producent.id %>
-  <%= link_to '-->', telefons_path(producent_id: @id.to_i) %>
+  <% @id = producent.id %>
+  <%= link_to '->', telefons_path(producent_id: @id.to_i) %>
   </div>
 </article>
 <% end %>
 <div class="link">
-  <%= link_to 'New Producent', new_producent_path %>
+  <%= link_to 'Nowy', new_producent_path %>
 </div>
