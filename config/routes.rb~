@@ -11,7 +11,7 @@ Mobile::Application.routes.draw do
   get  "new_producent_form" => "producents#_form", :as => "new_producent_form" 
   
   get  "telefons/new"
-  get  "new_telefon" => "telefons#new", :as => "new_telefon"
+  get  "new_telefon" => "telefons#new", :as => "new_producent"
   get  "new_telefon_form" => "telefons#_form", :as => "new_telefon_form"
 
   resources :users

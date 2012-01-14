@@ -9,4 +9,6 @@
   </div>
 </article>
 <% end %>
-
+<div class="link">
+  <%= link_to 'Nowy', new_producent_path %>
+</div>

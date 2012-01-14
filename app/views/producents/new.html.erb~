@@ -1,4 +1,4 @@
-<% title "Nowy Telefon" %>
+<% title "Nowy" %>
 
 <div class="form new">
   <%= render 'form' %>

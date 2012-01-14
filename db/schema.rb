@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120114114632) do
+ActiveRecord::Schema.define(:version => 20120114153110) do
 
   create_table "producents", :force => true do |t|
     t.string   "nazwa"
@@ -32,6 +32,14 @@ ActiveRecord::Schema.define(:version => 20120114114632) do
     t.string   "wymiary"
     t.string   "waga"
     t.string   "cena"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "users", :force => true do |t|
+    t.string   "email"
+    t.string   "password_hash"
+    t.string   "password_salt"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
