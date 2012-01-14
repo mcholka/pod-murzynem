@@ -2,7 +2,8 @@ class TelefonsController < ApplicationController
   # GET /telefons
   # GET /telefons.xml
   def index
-    @telefons = Telefon.all
+  @telefons = Telefon.where(producent_id: params['producent_id'].to_i).all
+# @telefons = Telefon.all
     respond_with(@telefons)
   end
 

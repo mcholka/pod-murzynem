@@ -1,7 +1,7 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
 
 one:
-  producents_id: 1
+  producent_id: 1
   model: MyString
   siec: MyString
   ekran: MyString
@@ -11,11 +11,10 @@ one:
   system: MyString
   wymiary: MyString
   waga: MyString
-  link: MyString
   cena: MyString
 
 two:
-  producents_id: 1
+  producent_id: 1
   model: MyString
   siec: MyString
   ekran: MyString
@@ -25,5 +24,4 @@ two:
   system: MyString
   wymiary: MyString
   waga: MyString
-  link: MyString
   cena: MyString

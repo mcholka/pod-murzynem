@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120113112545) do
+ActiveRecord::Schema.define(:version => 20120114114632) do
 
   create_table "producents", :force => true do |t|
     t.string   "nazwa"
@@ -21,7 +21,7 @@ ActiveRecord::Schema.define(:version => 20120113112545) do
   end
 
   create_table "telefons", :force => true do |t|
-    t.integer  "producents_id"
+    t.integer  "producent_id"
     t.string   "model"
     t.string   "siec"
     t.string   "ekran"
@@ -31,7 +31,6 @@ ActiveRecord::Schema.define(:version => 20120113112545) do
     t.string   "system"
     t.string   "wymiary"
     t.string   "waga"
-    t.string   "link"
     t.string   "cena"
     t.datetime "created_at"
     t.datetime "updated_at"

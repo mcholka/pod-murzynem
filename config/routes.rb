@@ -1,7 +1,7 @@
 Mobile::Application.routes.draw do
-  resources :producents
-
   resources :telefons
+
+  resources :producents
 
 root :to => 'producents#index'
   # The priority is based upon order of creation:

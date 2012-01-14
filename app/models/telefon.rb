@@ -1,3 +1,3 @@
 class Telefon < ActiveRecord::Base
-	belongs_to :producents
+	belongs_to :producent
 end
