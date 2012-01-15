@@ -1,24 +1,24 @@
-[{"producent_id":1,"model":"Desire Z","siec":"2G/3G","ekran":"480 x 800pix, 3,7cali","foto":"5Mpix","bateria":"1300mAh","urzadzenie":"Smartfon","system":"Android","wymiary":"119 x 60,4 x 14,2 mm", "waga":"180g","cena":"od 949zł"},
+[{"producent_id":1,"model":"Desire Z","siec":"http://bi.gazeta.pl/im/9/8392/z8392129X,HTC-Desire-Z.jpg","ekran":"480 x 800pix, 3,7cali","foto":"5Mpix","bateria":"1300mAh","urzadzenie":"Smartfon","system":"Android","wymiary":"119 x 60,4 x 14,2 mm", "waga":"180g","cena":"od 949zł"},
 
-{"producent_id":1,"model":"HD 2","siec":"2G/3G","ekran":"480 x 800pix, 4,3cali","foto":"8Mpix","bateria":"1230mAh","urzadzenie":"Smartfon","system":"Windows Mobile 6","wymiary":"120,5 x 67 x 11 mm", "waga":"157g","cena":"od 1499zł"},
+{"producent_id":1,"model":"HD 2","siec":"http://www.htc.com/uploadedImages/WWW/Press_Room/Product_Photo_Gallery/HTC_HD_2/Download_03_HTC_HD2.jpg","ekran":"480 x 800pix, 4,3cali","foto":"8Mpix","bateria":"1230mAh","urzadzenie":"Smartfon","system":"Windows Mobile 6","wymiary":"120,5 x 67 x 11 mm", "waga":"157g","cena":"od 1499zł"},
 
-{"producent_id":2,"model":"500","siec":"2G/3G","ekran":"360 x 640pix, 3,2cali","foto":"5Mpix","bateria":"1100mAh","urzadzenie":"Smartfon","system":"Symbian","wymiary":"111,3 x 53,8 x 14,1 mm", "waga":"93g","cena":"od 529,99zł"},
+{"producent_id":2,"model":"500","siec":"http://dailymobile.pl/wp-content/uploads/2011/08/Nokia-500-black.jpg","ekran":"360 x 640pix, 3,2cali","foto":"5Mpix","bateria":"1100mAh","urzadzenie":"Smartfon","system":"Symbian","wymiary":"111,3 x 53,8 x 14,1 mm", "waga":"93g","cena":"od 529,99zł"},
 
-{"producent_id":2,"model":"N9","siec":"2G/3G","ekran":"480 x 854pix, 3,9cali","foto":"8,1Mpix","bateria":"1450mAh","urzadzenie":"Smartfon","system":"MeeGo 1,2","wymiary":"116,5 x 61,5 x 12,1 mm", "waga":"135g","cena":"od 1800zł"},
+{"producent_id":2,"model":"N9","siec":"http://www.lankaphones.com/images/13162_2011110145.jpg","ekran":"480 x 854pix, 3,9cali","foto":"8,1Mpix","bateria":"1450mAh","urzadzenie":"Smartfon","system":"MeeGo 1,2","wymiary":"116,5 x 61,5 x 12,1 mm", "waga":"135g","cena":"od 1800zł"},
 
-{"producent_id":3,"model":"Galaxy S","siec":"2G/3G","ekran":"480 x 800pix, 4cale","foto":"5Mpix","bateria":"1500mAh","urzadzenie":"Smartfon","system":"Android","wymiary":"122,4 x 64,2 x 9,9 mm", "waga":"119g","cena":"od 1089zł"},
+{"producent_id":3,"model":"Galaxy S","siec":"http://spokogadzet.komputerswiat.pl/wp-content/uploads/2010/09/samsung-galaxy-s-2.jpg","ekran":"480 x 800pix, 4cale","foto":"5Mpix","bateria":"1500mAh","urzadzenie":"Smartfon","system":"Android","wymiary":"122,4 x 64,2 x 9,9 mm", "waga":"119g","cena":"od 1089zł"},
 
-{"producent_id":3,"model":"Galaxy mini","siec":"2G/3G","ekran":"320 x 240pix, 3,14cali","foto":"3Mpix","bateria":"1200mAh","urzadzenie":"Smartfon","system":"Android","wymiary":"110 x 61 x 12 mm", "waga":"109g","cena":"od 419zł"},
+{"producent_id":3,"model":"Galaxy mini","siec":"http://samsungomania.pl/zdjecia-samsung/2011/12/samsung-galaxy-mini-s5570-3.jpg","ekran":"320 x 240pix, 3,14cali","foto":"3Mpix","bateria":"1200mAh","urzadzenie":"Smartfon","system":"Android","wymiary":"110 x 61 x 12 mm", "waga":"109g","cena":"od 419zł"},
 
-{"producent_id":4,"model":"Xperia X8","siec":"2G/3G","ekran":"320 x 480pix, 3cali","foto":"3Mpix","bateria":"1200mAh","urzadzenie":"Smartfon","system":"Android","wymiary":"99 x 54 x 15 mm", "waga":"104g","cena":"od 440zł"},
+{"producent_id":4,"model":"Xperia X8","siec":"http://www.fortel.info/images/sony-ericsson-X8.jpg","ekran":"320 x 480pix, 3cali","foto":"3Mpix","bateria":"1200mAh","urzadzenie":"Smartfon","system":"Android","wymiary":"99 x 54 x 15 mm", "waga":"104g","cena":"od 440zł"},
 
-{"producent_id":4,"model":"Xperia X10","siec":"2G/3G","ekran":"854 x 480pix, 4cali","foto":"8,1Mpix","bateria":"1500mAh","urzadzenie":"Smartfon","system":"Android","wymiary":"119 x 63 x 13 mm", "waga":"135g","cena":"od 1050zł"},
+{"producent_id":4,"model":"Xperia X10","siec":"http://bi.gazeta.pl/im/8/7850/z7850568X,Sony-Ericsson-Xperia-X10.jpg","ekran":"854 x 480pix, 4cali","foto":"8,1Mpix","bateria":"1500mAh","urzadzenie":"Smartfon","system":"Android","wymiary":"119 x 63 x 13 mm", "waga":"135g","cena":"od 1050zł"},
 
-{"producent_id":5,"model":"GT540","siec":"2G/3G","ekran":"320 x 480pix, 3cali","foto":"3,2Mpix","bateria":"1500mAh","urzadzenie":"Smartfon","system":"Android","wymiary":"109 x 54 x 12,7 mm", "waga":"115,5g","cena":"od 460zł"},
+{"producent_id":5,"model":"GT540","siec":"http://www.lg.com/pl/telefony-komorkowe/images/lg-telefony-lg-swift-gt540-large.png","ekran":"320 x 480pix, 3cali","foto":"3,2Mpix","bateria":"1500mAh","urzadzenie":"Smartfon","system":"Android","wymiary":"109 x 54 x 12,7 mm", "waga":"115,5g","cena":"od 460zł"},
 
-{"producent_id":5,"model":"E 900","siec":"2G/3G","ekran":"480 x 800pix, 3,8cali","foto":"5Mpix","bateria":"1500mAh","urzadzenie":"Smartfon","system":"Windows Phone 7","wymiary":"125 x 59,8 x 11,5 mm", "waga":"157g","cena":"od 949zł"},
+{"producent_id":5,"model":"E 900","siec":"http://st2.gsmarena.com/vv/pics/lg/LG-E900-Optimus-7-2.jpg","ekran":"480 x 800pix, 3,8cali","foto":"5Mpix","bateria":"1500mAh","urzadzenie":"Smartfon","system":"Windows Phone 7","wymiary":"125 x 59,8 x 11,5 mm", "waga":"157g","cena":"od 949zł"},
 
-{"producent_id":6,"model":"Defy","siec":"2G/3G","ekran":"480 x 854pix, 3,7cali","foto":"5Mpix","bateria":"1540mAh","urzadzenie":"Smartfon","system":"Android","wymiary":"107 x 59 x 13,4 mm", "waga":"118g","cena":"od 870zł"},
+{"producent_id":6,"model":"Defy","siec":"http://www.motorola.com/staticfiles/Consumers/Products/Mobile%20Phones/MOTOROLA-DEFY/_Images/_Staticfiles/B2C-DEFY-NON-BLUR-Black-ALT2-PL-PL.png","ekran":"480 x 854pix, 3,7cali","foto":"5Mpix","bateria":"1540mAh","urzadzenie":"Smartfon","system":"Android","wymiary":"107 x 59 x 13,4 mm", "waga":"118g","cena":"od 870zł"},
 
-{"producent_id":6,"model":"Gleam","siec":"2G","ekran":"240 x 320pix, 2,4cali","foto":"2Mpix","bateria":"750mAh","urzadzenie":"Telefon","system":"Brak","wymiary":"106 x 53 x 13,9 mm", "waga":"105g","cena":"od 305zł"}]
+{"producent_id":6,"model":"Gleam","siec":"http://www.videotesty.pl/m/pliki/2011/06/09/Motorola-Gleam_1_.jpeg","ekran":"240 x 320pix, 2,4cali","foto":"2Mpix","bateria":"750mAh","urzadzenie":"Telefon","system":"Brak","wymiary":"106 x 53 x 13,9 mm", "waga":"105g","cena":"od 305zł"}]
 

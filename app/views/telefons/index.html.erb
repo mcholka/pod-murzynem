@@ -2,13 +2,11 @@
 
 <% @telefons.each do |telefon| %>
 <article class="index">
+<img src="<%= telefon.siec %>" height=550 width=475 />
+
   <div class="attribute">
     <span class="name">Model</span>
     <span class="value"><%= telefon.model %></span>
-  </div>
-    <div class="attribute">
-    <span class="name">Siec</span>
-    <span class="value"><%= telefon.siec %></span>
   </div>
     <div class="attribute">
     <span class="name">Ekran</span>
