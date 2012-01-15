@@ -41,9 +41,10 @@
     <span class="value"><%= telefon.cena %></span>
   </div>
 
-<div id="user_nav">
-  <% if admin %>
-    <div class="links">
+
+<% if admin %>
+<div id="user_nav"> 
+   <div class="links">
 	<%= link_to 'Edytuj', edit_telefon_path(telefon) %> |
 	<%= link_to 'Usun', telefon, confirm: 'Napewno wywalić??', method: :delete %>
   </div>
@@ -56,3 +57,4 @@
   <%= link_to 'Strona Glowna', producents_path %>
   <%= link_to 'Nowy', new_telefon_path %>
 </div>
+<%= paginate @telefons%>
