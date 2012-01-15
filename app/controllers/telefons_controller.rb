@@ -2,7 +2,8 @@ class TelefonsController < ApplicationController
   # GET /telefons
   # GET /telefons.xml
   def index
-  @telefons = Telefon.page(params[:page]).per(1).where(producent_id: params['producent_id'].to_i)
+ @telefons = Telefon.where(producent_id: params['producent_id'].to_i).all
+@telefons = Telefon.search(params[:search])
     respond_with(@telefons)
   end
 
@@ -48,4 +49,5 @@ class TelefonsController < ApplicationController
     @telefon.destroy
     respond_with(@telefon)
   end
+
 end

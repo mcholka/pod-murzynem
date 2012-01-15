@@ -1,18 +1,12 @@
-<% title "All telefons" %>
+<% title "Telefony" %>
 
 <% @telefons.each do |telefon| %>
 <article class="index">
+<img src="<%= telefon.siec %>" height=525 width=500 />
+
   <div class="attribute">
-    <span class="name">Producent</span>
-    <span class="value"><%= telefon.producent_id %></span>
-  </div>
-    <div class="attribute">
     <span class="name">Model</span>
     <span class="value"><%= telefon.model %></span>
-  </div>
-    <div class="attribute">
-    <span class="name">Siec</span>
-    <span class="value"><%= telefon.siec %></span>
   </div>
     <div class="attribute">
     <span class="name">Ekran</span>
@@ -46,14 +40,19 @@
     <span class="name">Cena</span>
     <span class="value"><%= telefon.cena %></span>
   </div>
+
+<div id="user_nav">
+  <% if admin %>
     <div class="links">
-    <%= link_to 'Show', telefon %> |
-    <%= link_to 'Edit', edit_telefon_path(telefon) %> |
-    <%= link_to 'Destroy', telefon, confirm: 'Are you sure?', method: :delete %>
+	<%= link_to 'Edytuj', edit_telefon_path(telefon) %> |
+	<%= link_to 'Usun', telefon, confirm: 'Napewno wywalić??', method: :delete %>
   </div>
+  <% end %>
+
+<br/><br/>
 </article>
 <% end %>
-
 <div class="link">
-  <%= link_to 'New Telefon', new_telefon_path %>
+  <%= link_to 'Strona Glowna', producents_path %>
+  <%= link_to 'Nowy', new_telefon_path %>
 </div>
