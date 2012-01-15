@@ -1,6 +1,5 @@
 Mobile::Application.routes.draw do
  
-  resources :porownajs
 
   get "sessions/new"
 
@@ -23,6 +22,7 @@ Mobile::Application.routes.draw do
   resources :telefons
 
   resources :producents 
+  resources :porownajs
 
 root :to => 'producents#index'
   # The priority is based upon order of creation:

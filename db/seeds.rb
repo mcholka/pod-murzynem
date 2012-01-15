@@ -24,11 +24,11 @@ telefons = Array.new
    telefons << b
  end
 
-#json = ActiveSupport::JSON.decode(File.read('db/seeds/users.json'))
+json = ActiveSupport::JSON.decode(File.read('db/seeds/porownajs.json'))
 
-#User.delete_all
-#users = Array.new
-# json.each do |a|
-#   b = User.create!(a)
-#   users << b
-# end
+Porownaj.delete_all
+porownajs = Array.new
+ json.each do |a|
+   b = Porownaj.create!(a)
+   porownajs << b
+ end
