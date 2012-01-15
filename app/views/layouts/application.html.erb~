@@ -33,12 +33,14 @@
 						<nav>
 							<ul class="sf-menu sf-vertical">
 <li>
-<%= form_tag fortunes_path, :method => :get, :id => "fortunes_search" do %>
+<% form_tag telefons_path, :method => 'get' do %>
   <p>
     <%= text_field_tag :search, params[:search] %>
-    <%= submit_tag "Search", :name => nil %>
+    <%= submit_tag "Search", :model => nil %>
   </p>
 <% end %>
+
+
 <br/><br/>
 </li>
 								<li>
