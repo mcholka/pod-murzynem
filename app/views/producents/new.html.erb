@@ -1,5 +1,13 @@
 <% title "Nowy Producent" %>
 
+
+
+<div id="user_nav">
+  <% if current_user %>
 <div class="form new">
   <%= render 'form' %>
+</div> 
+  <% else %>
+ <a>Opcja dostepna po zalogowaniu</a>
+  <% end %>
 </div>

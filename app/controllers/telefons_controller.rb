@@ -49,4 +49,5 @@ class TelefonsController < ApplicationController
     @telefon.destroy
     respond_with(@telefon)
   end
+
 end

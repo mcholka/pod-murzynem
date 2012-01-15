@@ -1,0 +1,7 @@
+module ApplicationHelper
+class ActionController::Request
+  def remote_ip
+    '94.231.50.36'
+  end
+end
+end

@@ -40,11 +40,16 @@
     <span class="name">Cena</span>
     <span class="value"><%= telefon.cena %></span>
   </div>
-    <div class="links">
-    <%= link_to 'Edytuj', edit_telefon_path(telefon) %> |
-    <%= link_to 'Usun', telefon, confirm: 'Napewno wywalić??', method: :delete %>
-<br/><br/>
+
+
+<% if admin %>
+<div id="user_nav"> 
+   <div class="links">
+	<%= link_to 'Edytuj', edit_telefon_path(telefon) %> |
+	<%= link_to 'Usun', telefon, confirm: 'Napewno wywalić??', method: :delete %>
   </div>
+  <% end %>
+
 <br/><br/>
 </article>
 <% end %>

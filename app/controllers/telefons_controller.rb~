@@ -2,7 +2,7 @@ class TelefonsController < ApplicationController
   # GET /telefons
   # GET /telefons.xml
   def index
-  @telefons = Telefon.page(params[:page]).per(1).where(producent_id: params['producent_id'].to_i)
+ @telefons = Telefon.where(producent_id: params['producent_id'].to_i).all
 @telefons = Telefon.search(params[:search])
     respond_with(@telefons)
   end
@@ -48,5 +48,17 @@ class TelefonsController < ApplicationController
     @telefon = Telefon.find(params[:id])
     @telefon.destroy
     respond_with(@telefon)
+  end
+helper_method :admin?
+  protected
+  def authorize
+	unless admin?
+	  flash[:notice]="Unauthorized acces"
+	  redirect_to root_url
+	  false
+	end
+  end
+  def admin?
+	@current_user ||= User.find(session[:user_id]) if session[:user_id]
   end
 end

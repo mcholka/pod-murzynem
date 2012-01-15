@@ -1,5 +1,12 @@
-<% title "Nowy telefon" %>
+<% title "Nowy Telefon" %>
 
+
+<div id="user_nav">
+  <% if current_user %>
 <div class="form new">
   <%= render 'form' %>
+</div>
+  <% else %>
+ <a>Widok dostepny po zalogowaniu</a>
+  <% end %>
 </div>
