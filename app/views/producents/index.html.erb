@@ -6,6 +6,15 @@
   <% @id = producent.id %>
   <a href="<%=telefons_path(producent_id: @id.to_i) %>"><img src="<%= producent.link %>" height="375" width="500" /></a>
   </div>
+
+
+<% if admin %>
+<div id="user_nav">
+   <div class="links">
+        <%= link_to 'Usun', producent, confirm: 'Napewno wywalić??', method: :delete %>
+  </div>
+  <% end %>
+
 </article>
 <% end %>
 <%= paginate @producents %>
