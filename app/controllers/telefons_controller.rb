@@ -4,7 +4,6 @@ class TelefonsController < ApplicationController
   def index
   @telefons = Telefon.where(producent_id: params['producent_id'].to_i).all
 # @telefons = Telefon.all
-@telefons= Telefon.search(params[:search])
     respond_with(@telefons)
   end
 

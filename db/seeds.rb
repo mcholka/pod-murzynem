@@ -1,4 +1,4 @@
-# This file should contain all the record creation needed to seed the database with its default values.
+#This file should contain all the record creation needed to seed the database with its default values.
 # The data can then be loaded with the rake db:seed (or created alongside the db with db:setup).
 #
 # Examples:
@@ -24,3 +24,11 @@ telefons = Array.new
    telefons << b
  end
 
+#json = ActiveSupport::JSON.decode(File.read('db/seeds/users.json'))
+
+#User.delete_all
+#users = Array.new
+# json.each do |a|
+#   b = User.create!(a)
+#   users << b
+# end
