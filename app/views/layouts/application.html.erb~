@@ -27,7 +27,7 @@
 						<div id="sidebar-container">
 							
 						<header>
-							<a href="/producents/new"><img src="./assets/images/logo.jpg" alt="logo" /></a>
+							<a><img src="./assets/images/logo.jpg" alt="logo" /></a>
 						</header>
 						
 						<nav>
