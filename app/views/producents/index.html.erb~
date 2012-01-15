@@ -3,12 +3,11 @@
 <% @producents.each do |producent| %>
 <article class="index">
   <div class="attribute">
-  <img src="<%= producent.link %>" height="100" width="150" />
   <% @id = producent.id %>
+  <a href="<%=telefons_path(producent_id: @id.to_i) %>"><img src="<%= producent.link %>" height="375" width="500" /></a>
   <%= link_to '->', telefons_path(producent_id: @id.to_i) %>
   </div>
 </article>
 <% end %>
-<div class="link">
-  <%= link_to 'Nowy', new_producent_path %>
-</div>
+<%= paginate @producents %>
+

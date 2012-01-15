@@ -55,7 +55,11 @@
 									
 						  			<% if current_user %>
 										
-							    		<li><a>Zalogowany jako: <%= current_user.email%> <%=link_to "Wyloguj sie", log_out_path %></a></li>
+							    		<li>
+									  <a>Zalogowany jako: <%= current_user.email%> 
+									     <%=link_to "Wyloguj sie", log_out_path %>
+   									  </a>
+									</li>
 										
 						  			<% else %>
 									<li>
