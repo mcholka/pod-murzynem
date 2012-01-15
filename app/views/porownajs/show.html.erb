@@ -1,0 +1,20 @@
+<% title "Show porownaj" %>
+
+<% if notice -%>
+<div id="notice"><%= notice %></div>
+<% end -%>
+
+<article class="single">
+  <div class="attribute">
+    <span class="name">Name</span>
+    <span class="value"><%= @porownaj.name %></span>
+  </div>
+  <div class="attribute">
+    <span class="name">Link</span>
+    <span class="value"><%= @porownaj.link %></span>
+  </div>
+  <div class="link">
+    <%= link_to 'Edit', edit_porownaj_path(@porownaj) %> |
+    <%= link_to 'Back', porownajs_path %>
+  </div>
+</article>

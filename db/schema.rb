@@ -11,7 +11,14 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120114153110) do
+ActiveRecord::Schema.define(:version => 20120115215744) do
+
+  create_table "porownajs", :force => true do |t|
+    t.string   "name"
+    t.string   "link"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "producents", :force => true do |t|
     t.string   "nazwa"

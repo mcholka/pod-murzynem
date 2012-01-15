@@ -1,0 +1,23 @@
+<% title "All porownajs" %>
+
+<% @porownajs.each do |porownaj| %>
+<article class="index">
+  <div class="attribute">
+    <span class="name">Name</span>
+    <span class="value"><%= porownaj.name %></span>
+  </div>
+    <div class="attribute">
+    <span class="name">Link</span>
+    <span class="value"><%= porownaj.link %></span>
+  </div>
+    <div class="links">
+    <%= link_to 'Show', porownaj %> |
+    <%= link_to 'Edit', edit_porownaj_path(porownaj) %> |
+    <%= link_to 'Destroy', porownaj, confirm: 'Are you sure?', method: :delete %>
+  </div>
+</article>
+<% end %>
+
+<div class="link">
+  <%= link_to 'New Porownaj', new_porownaj_path %>
+</div>
