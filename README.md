@@ -2,7 +2,7 @@ Projekt Pod-Murzynem
 	
 	wtf?! co to za nazwa..???????
 	planujemy zrobić aplikację umożliwiającą przegląd telefonów komórkowych wiodących producentów.
-	Bedzie Git jak Git
+	Bedzie Git jak Git.
 
 Technologie
 
