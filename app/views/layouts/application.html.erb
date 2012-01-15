@@ -32,6 +32,15 @@
 						
 						<nav>
 							<ul class="sf-menu sf-vertical">
+<li>
+<%= form_tag telefons_path, :method => :get, :id => "telefons_search" do %>
+  <p>
+    <%= text_field_tag :search, params[:search] %>
+    <%= submit_tag "Search", :name => nil %>
+  </p>
+<% end %>
+<br/><br/>
+</li>
 								<li>
 									<%= link_to 'Strona Glowna', producents_path %>
 								</li>
