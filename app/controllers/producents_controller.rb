@@ -2,7 +2,8 @@ class ProducentsController < ApplicationController
   # GET /producents
   # GET /producents.xml
   def index
-    @producents = Producent.all
+@producents = Producent.page(params[:page]).per(1)   
+# @producents = Producent.all
     respond_with(@producents)
   end
 
